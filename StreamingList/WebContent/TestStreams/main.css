@@ -4,6 +4,8 @@ body,html {
 	font-family: font-family : "HelveticaNeue-Light", "Helvetica Neue Light",
 		"Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
 	background: #353839;
+	overflow:-Scroll;
+	overflow-x:hidden;
 }
 
 *:after,*:before {
@@ -22,6 +24,9 @@ body,html {
 	clear: both;
 }
 
+.container {
+	position:relative;
+}
 .main,.container > header {
 	width: 90%;
 	max-width: 70em;
@@ -30,6 +35,7 @@ body,html {
 }
 
 header,footer {
+	width: 100%;
 	padding: 0.5em;
 	color: white;
 	background-color: #2a4a64;
@@ -49,28 +55,17 @@ header {
 	#position: fixed;
 }
 
-aside ul {
-	list-style-type: none;
-	float: fixed;
-	display: block;
-}
 
-aside ul li a {
-	color: #cdcdcd;
-	font-size: 1em;
-	font-weight: bold;
-	text-decoration: none;
-	text-align: left;
-}
-
-aside ul li a:hover {
-	background-color: #675C7C;
-	color: white;
-}
 
 nav {
+	    position:fixed;  
+    top:0px;  
+    left:20px;  
+    #border:solid 1px #0000FF;  
+    width:170px;  
+    height:100%;  
 
-
+/**
 	width:15%;
 	position: fixed;
 	overflow: hidden;
@@ -81,9 +76,20 @@ nav {
 	margin: 0;
 	padding: 0;
 	background: #353839;
-	
+	**/
 }
 
+
+aside {
+
+    position:fixed;  
+    top:0px;  
+    right:20px;  
+    #border:solid 1px #0000FF;  
+    width:15%;  
+    height:100%;  
+	
+}
 nav ul li a {
 	display: block;
 	color: #cdcdcd;
@@ -172,20 +178,40 @@ ul.nav span {
 
 main {
 	#float: left;
-	#width: 70%;
+	width: 60%;
 	word-warp: break-word;
 }
 
 section {
+	float: releative;
+	text-align: justify;
 	margin: 20px;
 	padding: 20px;
 	background-color: silver;
 	border-radius: 8px;
 }
 
-ul { #
-	list-style: none;
+
+aside ul {
+	list-style-type: none;
+	#float: fixed;
+	display: block;
 }
+
+aside ul li a {
+	color: #cdcdcd;
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	#text-align: left;
+	line-height: 20px;
+}
+
+aside ul li a:hover {
+	background-color: #675C7C;
+	color: white;
+}
+
 
 p.vcas {
 	font-family: Arial, sans-serif;
