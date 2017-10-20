@@ -13,46 +13,45 @@
 
 <body>
 	<div class="container">
-		<header>Plugin Basic Test Links</header>
-		<nav id="nav">
-			<ul>
-				<li><a href="#hls">HLS</a>
+		<header class="clearfix">Plugin Basic Test Links</header>
+		<nav>
+			<ul class="nav">
+				<li><a href="#">HLS</a>
 					<ul>
-						<li><a href="#hls-drm-section">DRM</a></li>
-						<ul>
-							<li><a href="#hls-vmx">Verimatrix</a></li>
-							<li><a href="#hls-aes-128">AES-128</a></li>
-							<li><a href="#hls-fairplay">Fariplay</a></li>
-						</ul>
-						<li><a href="#hls-subtitles-section">Subtitles</a></li>
-						<ul>
-							<li><a href="#hls-in-manifest">In-Manifest</a></li>
+						<li><a href="#">DRM</a>
 							<ul>
-								<li><a href="#hls-manifest-webvtt">WebVTT</a></li>
-								<li><a href="#hls-manifest-smpte">SMPTE</a></li>
-							</ul>
-							<li><a href="#hls-embedded">Embedded</a></li>
+								<li><a href="#hls-vmx">Verimatrix</a></li>
+								<li><a href="#hls-aes-128">AES-128</a></li>
+								<li><a href="#hls-fairplay">Fariplay</a></li>
+							</ul></li>
+						<li><a href="#">Subtitles</a>
 							<ul>
-								<li><a href="#hls-embeded-cc"">CEA-608/708</a></li>
-								<li><a href="#hls-embeded-dvb">SMPTE</a></li>
-							</ul>
-							
-
-							<li><a href="#tags-section">Tags</a>
+								<li><a href="#">In-Manifest</a>
+									<ul>
+										<li><a href="#hls-manifest-webvtt">WebVTT</a></li>
+										<li><a href="#hls-manifest-smpte">SMPTE</a></li>
+									</ul></li>
+								<li><a href="#">Embedded</a>
+									<ul>
+										<li><a href="#hls-embeded-cc">CEA-608/708</a></li>
+										<li><a href="#hls-embeded-dvb">SMPTE</a></li>
+									</ul></li>
+							</ul></li>
+						<li><a href="#">Tags</a>
 							<ul>
 								<li><a href="#iframe">I-Frames</a></li>
 								<li><a href="#utc">UTC Times</a></li>
 								<li><a href="#hls-version">HLS Version</a></li>
-							</ul>
-							</li>
-							<li><a href="#assets-section">Assets</a>
+							</ul></li>
+
+						<li><a href="#">Assets</a>
 							<ul>
 								<li><a href="#purevideo">Pure Video</a></li>
 								<li><a href="#pureaudio">Pure Audio</a></li>
 								<li><a href="#multi_audio">Multi Audio</a></li>
 								<li><a href="#dynamic_res">H264 SPS</a></li>
-							</ul>
-							<li><a href="#features-section">Features</a>
+							</ul></li>
+						<li><a href="#">Features</a>
 							<ul>
 								<li><a href="#gzip">Gzip</a></li>
 								<li><a href="#hls-vtt-thumbnail">VTT Thumbnail</a></li>
@@ -60,34 +59,29 @@
 								<li><a href="#preferred">Set default language</a></li>
 								<li><a href="#cookie">Cookie</a></li>
 								<li><a href="#updateurl">Update URL</a></li>
-							</ul>
-							</li>
-							</li>
-							<li><a href="#https-section">HTTPS</a></li>
-							<li><a href="#live-section">Live</a></li>							
-							<li><a href="#hevc-section">HEVC</a></li>
-
-						</ul>
+							</ul></li>
+						<li><a href="#https-section">HTTPS</a></li>
+						<li><a href="#live-section">Live</a></li>
+						<li><a href="#hevc-section">HEVC</a></li>
 					</ul></li>
-			
-			<li><a href="#dash">DASH</a></li>
-			<li><a href="#pd">PD</a></li>
-			<li><a href="#ss">SS</a></li>
-			<li><a href="#misc">Misc.</a>
-				<ul>
-					<li><a href="#external-subtitles">External Subtitles</a>
-						<ul>
-							<li><a href="#external-ttml"">TTML</a></li>
-							<li><a href="#external-srt">SRT</a></li>
-							<li><a href="#external-smi"">SMI</a></li>
-							<li><a href="#external-webvtt">WebVTT</a></li>
-							<li><a href="#external-smpte">SMPTE</a></li>
-						</ul></li>
-				</ul></li>
-			<ul></ul></ul>
+				<li><a href="#dash">DASH</a></li>
+				<li><a href="#pd">PD</a></li>
+				<li><a href="#ss">SS</a></li>
+				<li><a href="#">Misc.</a>
+					<ul>
+						<li><a href="#">External Subtitles</a>
+							<ul>
+								<li><a href="#external-ttml">TTML</a></li>
+								<li><a href="#external-srt">SRT</a></li>
+								<li><a href="#external-smi">SMI</a></li>
+								<li><a href="#external-webvtt">WebVTT</a></li>
+								<li><a href="#external-smpte">SMPTE</a></li>
+							</ul></li>
+					</ul></li>
+			</ul>
 		</nav>
 
-		<main>
+		<main class="main">
 		<section id="hls" class="protocol">
 			<h3>HLS</h3>
 			<div id="hls-drm-section">
@@ -103,7 +97,7 @@
 						</li>
 						<li><pre>http://d3esberis2t9z4.cloudfront.net/vod/making-culture-01-encrypt/index-nodrm.m3u8</pre>
 						</li>
-						<p>VideoMark</p>
+						<h6>VideoMark</h6>
 						<li><pre>http://ott-content.s3.amazonaws.com/vod/CCD153A3-9F60-4D5B-A6F9-15FEF46C0A0E/index.m3u8</pre>
 						</li>
 						<li><pre>http://s3.amazonaws.com/ott-content/vod/A65E7915-1395-4539-B105-C9F14E895AF4/index.m3u8</pre>
@@ -195,184 +189,183 @@
 
 			</div>
 			<div id="tags-section">
-			<h4>Tags Support</h4>
-			<div id="i-frame">
-				<h5>I-Frames</h5>
-				<ul>
-					<li><pre>http://stream1.visualon.com:8082/hls/Frank/668191947/668191947.m3u8</pre>
-					</li>
-					<li><pre>http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
+				<h4>Tags Support</h4>
+				<div id="iframe">
+					<h5>I-Frames</h5>
+					<ul>
+						<li><pre>http://stream1.visualon.com:8082/hls/Frank/668191947/668191947.m3u8</pre>
+						</li>
+						<li><pre>http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
 							</pre></li>
-				</ul>
-</div>
-<div id="utc">
-				<h5>UTC Time:</h5>
-				<ul>
-					<li><pre>http://stream1.visualon.com:8082/hls/UTC/index.m3u8</pre>
-					</li>
-				</ul>
-</div>
-<div id="hls-version">
-				<h5>HLS Version</h5>
-				<ul>
-					<li>
-					<pre>V8</pre>
-					<pre>http://stream1.visualon.com:8082/hls/v8/bipbop_16x9_variant1.m3u8</pre>
-					</li>
-				</ul>
+					</ul>
+				</div>
+				<div id="utc">
+					<h5>UTC Time:</h5>
+					<ul>
+						<li><pre>http://stream1.visualon.com:8082/hls/UTC/index.m3u8</pre>
+						</li>
+					</ul>
+				</div>
+				<div id="hls-version">
+					<h5>HLS Version</h5>
+					<ul>
+						<li><pre>V8</pre> <pre>http://stream1.visualon.com:8082/hls/v8/bipbop_16x9_variant1.m3u8</pre>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div id="assets-section">
-			<h4>Assets</h4>
-			<div id="purevideo">
-				<h5>PURE Video</h5>
-				<ul>
-					<li><pre>http://stream1.visualon.com:8082/hls/videoonly/stream/videoonly.m3u8</pre>
-					</li>
-				</ul>
+				<h4>Assets</h4>
+				<div id="purevideo">
+					<h5>PURE Video</h5>
+					<ul>
+						<li><pre>http://stream1.visualon.com:8082/hls/videoonly/stream/videoonly.m3u8</pre>
+						</li>
+					</ul>
 				</div>
 				<div id="pureaudio">
-				<h5>PURE Audio</h5>
-				<ul>
-					<li><pre>http://stream1.visualon.com:8082/hls/customers/mdialog/new/pre_mid_post_roll_1/audio.m3u8</pre>
-					</li>
-					<li><pre>http://stream1.visualon.com:8082/hls/Customers/HBO/aac/index.m3u8 (ID3)</pre>
-					</li>
-				</ul>
+					<h5>PURE Audio</h5>
+					<ul>
+						<li><pre>http://stream1.visualon.com:8082/hls/customers/mdialog/new/pre_mid_post_roll_1/audio.m3u8</pre>
+						</li>
+						<li><pre>http://stream1.visualon.com:8082/hls/Customers/HBO/aac/index.m3u8 (ID3)</pre>
+						</li>
+					</ul>
 				</div>
 				<div id="multi_audio">
-				<h5>Multi_Audio</h5>
-				<ul>
-					<li><pre>http://stream1.visualon.com:8082/hls/multiaudio/MultiAudioOption10/1/multiaudio.m3u8</pre>
-					</li>
-					<li><pre>http://stream1.visualon.com:8082/hls/multiaudio/MultiAudioOption10/MultiAO1/multiaudio.m3u8</pre>
-					</li>
-					<li><pre>http://stream1.visualon.com:8082/hls/multiaudio/MultiAudioOption10/MultiAO2/multiav.m3u8
+					<h5>Multi_Audio</h5>
+					<ul>
+						<li><pre>http://stream1.visualon.com:8082/hls/multiaudio/MultiAudioOption10/1/multiaudio.m3u8</pre>
+						</li>
+						<li><pre>http://stream1.visualon.com:8082/hls/multiaudio/MultiAudioOption10/MultiAO1/multiaudio.m3u8</pre>
+						</li>
+						<li><pre>http://stream1.visualon.com:8082/hls/multiaudio/MultiAudioOption10/MultiAO2/multiav.m3u8
 							</pre></li>
-				</ul>
+					</ul>
 				</div>
 				<div id="dynamic_res">
-				<h5>H264 SPS</h5>
-				<ul>
-					<li><pre>http://stream1.visualon.com:8082/hls/Customers/Arrisi/36687/dynamic_res/index.m3u8</pre>
-					</li>
-				</ul>
-			</div>
-			<div id="https-section">
-				<h4>HTTPS</h4>
-				<ul>
-					<li><pre>https://stream1.visualon.com/hls/bipbopall.m3u8 (need CA )</pre>
-					</li>
-					<li><pre>https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8</pre>
-					</li>
-					<li><pre>Live</pre> <pre>https://rr.ew.waoo.tv/__cl/cg:default/__c/49-83_HTTP/__op/clear/__f/index.m3u8</pre>
-					</li>
-				</ul>
-			</div>
-			<div id="live-section">
-				<h4>Live</h4>
-				<ul>
-					<li><pre>http://nscreenn-chtmod.cdn.hinet.net/live/Home/index.m3u8</pre>
-					</li>
-				</ul>
-			</div>
-			<div id="hevc-section">
-
-				<h4>HEVC</h4>
-				<ul>
-					<li><pre>http://stream1.visualon.com:8082/hls/Customers/Layer3TV/kcnc_hevc/index.m3u8</pre>
-					</li>
-					<li><pre>http://stream1.visualon.com:8082/hls/hevc/hevc.m3u8</pre>
-					</li>
-					<li><pre>http://sample.vodobox.com/planete_interdite_hevc/planete_interdite_hevc.m3u8</pre>
-					</li>
-				</ul>
-			</div>
-			<div id="features-section" class="feature">
-				<h4>Features</h4>
-				<div id="gzip">
-				<h5>GZIP</h5>
-				<ul>
-					<li><pre>http://stream2.visualon.com/hls/gzip/all.m3u8</pre></li>
-					<li><pre>http://stream2.visualon.com/dash/ba/ondemand/testcard/1/client_manifest-events.mpd</pre>
-					</li>
-				</ul>
+					<h5>H264 SPS</h5>
+					<ul>
+						<li><pre>http://stream1.visualon.com:8082/hls/Customers/Arrisi/36687/dynamic_res/index.m3u8</pre>
+						</li>
+					</ul>
 				</div>
-				
-<div id="hls-vtt-thumbnail">
-				<h5>VTT Thumbnail</h5>
-
-				<ul>
-					<li><pre>https://dqwp3xzzbfhtw.cloudfront.net/vod/smil:bbb.smil/playlist.m3u8</pre>
-						<pre>https://www.radiantmediaplayer.com/media/thumbnails/bbb-thumbnails.vtt</pre>
-					</li>
-				</ul>
+				<div id="https-section">
+					<h4>HTTPS</h4>
+					<ul>
+						<li><pre>https://stream1.visualon.com/hls/bipbopall.m3u8 (need CA )</pre>
+						</li>
+						<li><pre>https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8</pre>
+						</li>
+						<li><pre>Live</pre> <pre>https://rr.ew.waoo.tv/__cl/cg:default/__c/49-83_HTTP/__op/clear/__f/index.m3u8</pre>
+						</li>
+					</ul>
 				</div>
-				<div id="bufferingtime">
-				<h5>InitialBuffering Time</h5>
-				<ul>
-					<li><pre>http://10.2.68.147:8080/V_Nova/46271/HLS.tennis-1920x1080p25/tennis-1920x1080p25-1.5mbps.m3u8</pre>
-					</li>
-				</ul>
+				<div id="live-section">
+					<h4>Live</h4>
+					<ul>
+						<li><pre>http://nscreenn-chtmod.cdn.hinet.net/live/Home/index.m3u8</pre>
+						</li>
+					</ul>
 				</div>
-				<div id="preferred">
-				<h5>Set default language</h5>
-				<ul>
-					<li><pre>subtitle:por;spa</pre> <pre>http://10.2.68.24/Ericsson_streams/content/5/index.m3u8</pre>
-					</li>
-					<li><pre>subtitle:eng;fra audio:en-eng;fr-fra</pre> <pre>http://stream1.visualon.com:8082/hls/Customers/Ericsson/vod6/index.m3u8</pre>
-					</li>
-					<li><pre>subtitle:eng;fin;sve audio:en-eng;fi-fin</pre> <pre>http://10.2.68.24/Ericsson_streams/content/2/index.m3u8</pre>
-					</li>
-				</ul>
+				<div id="hevc-section">
+
+					<h4>HEVC</h4>
+					<ul>
+						<li><pre>http://stream1.visualon.com:8082/hls/Customers/Layer3TV/kcnc_hevc/index.m3u8</pre>
+						</li>
+						<li><pre>http://stream1.visualon.com:8082/hls/hevc/hevc.m3u8</pre>
+						</li>
+						<li><pre>http://sample.vodobox.com/planete_interdite_hevc/planete_interdite_hevc.m3u8</pre>
+						</li>
+					</ul>
 				</div>
-				<div id="cookie">
-				<h5>Set Cookie</h5>
-				<ul>
-					<li><pre>Set-Cookie: cookie name=Test; domain=visualon.com; path=/;expires=2147483647; secure=false;</pre>
-						<pre>http://stream1.visualon.com:8082/hls/v8/bipbop_16x9_variant.m3u8</pre>
-					</li>
-				</ul>
+				<div id="features-section" class="feature">
+					<h4>Features</h4>
+					<div id="gzip">
+						<h5>GZIP</h5>
+						<ul>
+							<li><pre>http://stream2.visualon.com/hls/gzip/all.m3u8</pre></li>
+							<li><pre>http://stream2.visualon.com/dash/ba/ondemand/testcard/1/client_manifest-events.mpd</pre>
+							</li>
+						</ul>
+					</div>
+
+					<div id="hls-vtt-thumbnail">
+						<h5>VTT Thumbnail</h5>
+
+						<ul>
+							<li><pre>https://dqwp3xzzbfhtw.cloudfront.net/vod/smil:bbb.smil/playlist.m3u8</pre>
+								<pre>https://www.radiantmediaplayer.com/media/thumbnails/bbb-thumbnails.vtt</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="bufferingtime">
+						<h5>InitialBuffering Time</h5>
+						<ul>
+							<li><pre>http://10.2.68.147:8080/V_Nova/46271/HLS.tennis-1920x1080p25/tennis-1920x1080p25-1.5mbps.m3u8</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="preferred">
+						<h5>Set default language</h5>
+						<ul>
+							<li><pre>subtitle:por;spa</pre> <pre>http://10.2.68.24/Ericsson_streams/content/5/index.m3u8</pre>
+							</li>
+							<li><pre>subtitle:eng;fra audio:en-eng;fr-fra</pre> <pre>http://stream1.visualon.com:8082/hls/Customers/Ericsson/vod6/index.m3u8</pre>
+							</li>
+							<li><pre>subtitle:eng;fin;sve audio:en-eng;fi-fin</pre> <pre>http://10.2.68.24/Ericsson_streams/content/2/index.m3u8</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="cookie">
+						<h5>Set Cookie</h5>
+						<ul>
+							<li><pre>Set-Cookie: cookie name=Test; domain=visualon.com; path=/;expires=2147483647; secure=false;</pre>
+								<pre>http://stream1.visualon.com:8082/hls/v8/bipbop_16x9_variant.m3u8</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="updateurl">
+						<h5>UpdateURL</h5>
+						<h6>Clear Live</h6>
+						<ul>
+							<li><pre>http://10.2.64.51/live/11/index_live.m3u8</pre> <pre>http://10.2.64.52/live/11/index_live.m3u8</pre>
+							</li>
+						</ul>
+						<h6>Clear NTS</h6>
+						<ul>
+							<li><pre>http://10.2.64.51/live/11/index_nts.m3u8</pre> <pre>http://10.2.64.52/live/11/index_nts.m3u8</pre>
+							</li>
+						</ul>
+						<h6>Clear VOD</h6>
+						<ul>
+							<li><pre>http://10.2.64.51/live/11/index.m3u8</pre> <pre>http://10.2.64.52/live/11/index.m3u8</pre>
+							</li>
+						</ul>
+
+						<h6>verimatrix Live</h6>
+						<ul>
+							<li><pre>public-ott-nodrm.verimatrix.com:80</pre> <pre>http://10.2.64.51/live/making-culture-01-encrypt/index-nodrm_live.m3u8</pre>
+								<pre>http://10.2.64.52/live/making-culture-01-encrypt/index-nodrm_live.m3u8</pre>
+							</li>
+						</ul>
+
+						<h6>DRM NTS</h6>
+						<ul>
+							<li><pre>http://10.2.64.51/live/making-culture-01-encrypt/index-nodrm_nts.m3u8</pre>
+								<pre>http://10.2.64.52/live/making-culture-01-encrypt/index-nodrm_nts.m3u8</pre>
+							</li>
+						</ul>
+						<h6>DRM VOD</h6>
+						<ul>
+							<li><pre>http://10.2.64.51/live/making-culture-01-encrypt/index-nodrm.m3u8</pre>
+								<pre>http://10.2.64.52/live/making-culture-01-encrypt/index-nodrm.m3u8</pre>
+							</li>
+						</ul>
+					</div>
+
 				</div>
-				<div id="updateurl">
-				<h5>UpdateURL</h5>
-				<h6>Clear Live</h6>
-				<ul>
-					<li><pre>http://10.2.64.51/live/11/index_live.m3u8</pre> <pre>http://10.2.64.52/live/11/index_live.m3u8</pre>
-					</li>
-				</ul>
-				<h6>Clear NTS</h6>
-				<ul>
-					<li><pre>http://10.2.64.51/live/11/index_nts.m3u8</pre> <pre>http://10.2.64.52/live/11/index_nts.m3u8</pre>
-					</li>
-				</ul>
-				<h6>Clear VOD</h6>
-				<ul>
-					<li><pre>http://10.2.64.51/live/11/index.m3u8</pre> <pre>http://10.2.64.52/live/11/index.m3u8</pre>
-					</li>
-				</ul>
-
-				<h6>verimatrix Live</h6>
-				<ul>
-					<li><pre>public-ott-nodrm.verimatrix.com:80</pre> <pre>http://10.2.64.51/live/making-culture-01-encrypt/index-nodrm_live.m3u8</pre>
-						<pre>http://10.2.64.52/live/making-culture-01-encrypt/index-nodrm_live.m3u8</pre>
-					</li>
-				</ul>
-
-				<h6>DRM NTS</h6>
-				<ul>
-					<li><pre>http://10.2.64.51/live/making-culture-01-encrypt/index-nodrm_nts.m3u8</pre>
-						<pre>http://10.2.64.52/live/making-culture-01-encrypt/index-nodrm_nts.m3u8</pre>
-					</li>
-				</ul>
-				<h6>DRM VOD</h6>
-				<ul>
-					<li><pre>http://10.2.64.51/live/making-culture-01-encrypt/index-nodrm.m3u8</pre>
-						<pre>http://10.2.64.52/live/making-culture-01-encrypt/index-nodrm.m3u8</pre>
-					</li>
-				</ul>
-			</div>
-
 			</div>
 		</section>
 		<section id="dash" class="protocol">
@@ -528,7 +521,7 @@
 		<footer>Copyright &copy; 2003-2017 VisualOn Inc. All rights
 			reserved.</footer>
 	</div>
-<script src="jquery-3.2.1.js"></script>
-<script src="nav.js"></script>
+	<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

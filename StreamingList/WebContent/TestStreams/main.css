@@ -1,92 +1,202 @@
-body {
-	width: 100%;
-	margin: 0px;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+body,html {
+	margin: 0;
+	padding: 0;
+	font-family: font-family : "HelveticaNeue-Light", "Helvetica Neue Light",
+		"Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
 	background: #353839;
 }
-header, footer {
-    padding: 0.5em;
-    color: white;
-    background-color: #2a4a64;
-    clear: both;
-    text-align: center;
+
+*:after,*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.main,.container > header {
+	width: 90%;
+	max-width: 70em;
+	margin: 0 auto;
+	padding: 0 4em 3.125em 6em;
+}
+
+header,footer {
+	padding: 0.5em;
+	color: white;
+	background-color: #2a4a64;
+	clear: both;
+	text-align: center;
+}
+
 footer {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
-    font-weight: 100;
-    font-size: 0.8em;
+	font-weight: 100;
+	font-size: 0.8em;
 }
+
 header {
-	font-size:250%;
+	font-size: 250%;
 	font-weight: bold;
+	width: 100%;
+	#position: fixed;
 }
+
 aside ul {
 	list-style-type: none;
 	float: fixed;
 	display: block;
-;
 }
+
 aside ul li a {
 	color: #cdcdcd;
-    font-size: 1em;
-    font-weight: bold;
-    #text-decoration: none;
-    text-align: left
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: left;
 }
+
+aside ul li a:hover {
+	background-color: #675C7C;
+	color: white;
+}
+
 nav {
-    float: left;
-    width: 15%;
-    height: 100%;
-    margin: 0;
-    padding: 1em;
-    position: fixed;
+
+
+	width:15%;
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	height: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background: #353839;
+	
 }
 
-nav ul {
-    #list-style-type: none;
-    #padding: 0;
-}
-   
 nav ul li a {
-    display: block;
-    color: #cdcdcd;
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: none;
+	display: block;
+	color: #cdcdcd;
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 20px;
+}
 
+
+ul.nav {
+	padding: 0;
+	margin: 0;
+	color: #cdcdcd;
+	font-size: 1em;
+	font-weight: bold;
+	list-style-type: none;
+}
+
+ul.nav li a {
+	line-height: 20px;
+	color: #cdcdcd;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 5px 5px;
+	display: block;
+	text-decoration: none;
+}
+/**
+ul.nav li a:hover {
+	background-color: #675C7C;
+	color: white;
+}
+**/
+ul.nav ul {
+	margin: 0;
+	padding: 0;
+	display: none;
+	list-style-type: none;
+}
+
+ul.nav ul li {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+ul.nav ul li a {
+	padding-left: 20px;
+	font-size: 1.0em;
+	font-weight: bolder;
+	outline: 0;
+}
+
+/**
+ul.nav ul li a:hover {
+	background-color: #D3C99C;
+	color: #675C7C;
+}
+**/
+
+ul.nav ul ul li a {
+	color: silver;
+	padding-left: 40px;
+}
+
+ul.nav ul ul ul li a {
+	color: silver;
+	padding-left: 60px;
+	font-size:0.8em;
+	font-weight: bolder;
+}
+
+
+/**
+ul.nav ul ul li a:hover {
+	background-color: #D3CEB8;
+	color: #675C7C;
+}
+**/
+
+ul.nav span {
+	float: right;
 }
 
 main {
-	float:left;
-	width:70%;
-	word-warp:break-word;
-	
+	#float: left;
+	#width: 70%;
+	word-warp: break-word;
 }
 
 section {
-	margin:20px;
-	padding:20px;
-	background-color:silver;
+	margin: 20px;
+	padding: 20px;
+	background-color: silver;
 	border-radius: 8px;
 }
-.protocol{
 
+ul { #
+	list-style: none;
 }
 
-ul {
-    #list-style: none;
-}
-p.vcas	{
-	font-family:Arial,sans-serif;
-	font-style:italic;
-	font-size:15px;
-	color:#CC9933;
-}
-
-p,li{
-	
+p.vcas {
+	font-family: Arial, sans-serif;
+	font-style: italic;
 	font-size: 15px;
-    line-height: 1.5;
-    font-weight: 400;
-    color: #505050;
+	color: #CC9933;
+}
+
+pre {
+	font-size: 15px;
+	line-height: 1.5;
+	font-weight: 400;
+	color: #505050;
 }
