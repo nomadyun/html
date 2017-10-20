@@ -1,0 +1,92 @@
+body {
+	width: 100%;
+	margin: 0px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: #353839;
+}
+header, footer {
+    padding: 0.5em;
+    color: white;
+    background-color: #2a4a64;
+    clear: both;
+    text-align: center;
+}
+footer {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+    font-weight: 100;
+    font-size: 0.8em;
+}
+header {
+	font-size:250%;
+	font-weight: bold;
+}
+aside ul {
+	list-style-type: none;
+	float: fixed;
+	display: block;
+;
+}
+aside ul li a {
+	color: #cdcdcd;
+    font-size: 1em;
+    font-weight: bold;
+    #text-decoration: none;
+    text-align: left
+}
+nav {
+    float: left;
+    width: 15%;
+    height: 100%;
+    margin: 0;
+    padding: 1em;
+    position: fixed;
+}
+
+nav ul {
+    #list-style-type: none;
+    #padding: 0;
+}
+   
+nav ul li a {
+    display: block;
+    color: #cdcdcd;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+main {
+	float:left;
+	width:70%;
+	word-warp:break-word;
+	
+}
+
+section {
+	margin:20px;
+	padding:20px;
+	background-color:silver;
+	border-radius: 8px;
+}
+.protocol{
+
+}
+
+ul {
+    #list-style: none;
+}
+p.vcas	{
+	font-family:Arial,sans-serif;
+	font-style:italic;
+	font-size:15px;
+	color:#CC9933;
+}
+
+p,li{
+	
+	font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #505050;
+}
