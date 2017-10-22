@@ -1,228 +1,234 @@
 body,html {
-	margin: 0;
-	padding: 0;
-	font-family: font-family : "HelveticaNeue-Light", "Helvetica Neue Light",
-		"Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
-	background: #353839;
-	overflow:-Scroll;
-	overflow-x:hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+    "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+  background: #353839;
+  overflow:-Scroll;
+  overflow-x:hidden;
 }
 
-*:after,*:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+/**:after,*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+ Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ 
 .clearfix:before,.clearfix:after {
-	content: " ";
-	display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-	clear: both;
-}
+  clear: both;
+}*/
 
 .container {
-	position:relative;
-}
-.main,.container > header {
-	width: 90%;
-	max-width: 70em;
-	margin: 0 auto;
-	padding: 0 4em 3.125em 6em;
+  position:relative;
 }
 
-header,footer {
-	width: 100%;
-	padding: 0.5em;
-	color: white;
-	background-color: #2a4a64;
-	clear: both;
-	text-align: center;
+/*.main,.container > header {
+  width: 90%;
+  max-width: 70em;
+  margin: 0 auto;
+  padding: 0 4em 3.125em 6em;
 }
-
+*/
 footer {
-	font-weight: 100;
-	font-size: 0.8em;
+  width: 100%;
+  padding: 0.5em;
+  color: #8F8F8F;
+  background-color: #96b97d;
+  clear: both;
+  text-align: center;
+  font-weight: 100;
+  font-size: 12px;
 }
 
 header {
-	font-size: 250%;
-	font-weight: bold;
-	width: 100%;
-	#position: fixed;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  font-size: 250%;
+  font-weight: bold;
+  background-color: #96b97d;
+  text-align: center;
+  color: white;
+  position: fixed;
+  z-index:1;
 }
-
-
 
 nav {
-	    position:fixed;  
-    top:0px;  
-    left:20px;  
-    #border:solid 1px #0000FF;  
-    width:170px;  
-    height:100%;  
+    position:fixed;  
+    top:50px;  
+    left:10px;   
+    width:200px;  
+    height:100%;
 
-/**
-	width:15%;
-	position: fixed;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	height: 100%;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background: #353839;
-	**/
 }
 
+.main {
+  #float: left;
+  #width: 60%;
+ z-index:2;
+  margin-top: 50px;
+  margin-left: 210px;
+  margin-right: 210px;
+}
 
 aside {
-
     position:fixed;  
-    top:0px;  
-    right:20px;  
-    #border:solid 1px #0000FF;  
-    width:15%;  
-    height:100%;  
-	
+    top:50px;  
+    right:10px;  
+    width:200px;  
+    height:100%; 
+background-color: 
+   
+}
+
+aside ul {
+   padding: 5px; 
 }
 nav ul li a {
-	display: block;
-	color: #cdcdcd;
-	font-size: 1em;
-	font-weight: bold;
-	text-decoration: none;
-	list-style-type: none;
-	padding: 20px;
+  display: block;
+  color: #cdcdcd;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 20px;
 }
 
 
 ul.nav {
-	padding: 0;
-	margin: 0;
-	color: #cdcdcd;
-	font-size: 1em;
-	font-weight: bold;
-	list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #cdcdcd;
+  font-size: 1em;
+  font-weight: bold;
+  list-style-type: none;
+  color: #006fc9;
 }
 
 ul.nav li a {
-	line-height: 20px;
-	color: #cdcdcd;
-	font-size: 1.2em;
-	font-weight: bold;
-	padding: 5px 5px;
-	display: block;
-	text-decoration: none;
+  line-height: 20px;
+  color: #006fc9;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5px 5px;
+  display: block;
+  text-decoration: none;
 }
 /**
 ul.nav li a:hover {
-	background-color: #675C7C;
-	color: white;
+  background-color: #675C7C;
+  color: white;
 }
 **/
 ul.nav ul {
-	margin: 0;
-	padding: 0;
-	display: none;
-	list-style-type: none;
+  color: #006fc9;
+  margin: 0;
+  padding: 0;
+  display: none;
+  list-style-type: none;
 }
 
 ul.nav ul li {
-	margin: 0;
-	padding: 0;
-	clear: both;
+  margin: 0;
+  padding: 0;
+  clear: both;
 }
 
 ul.nav ul li a {
-	padding-left: 20px;
-	font-size: 1.0em;
-	font-weight: bolder;
-	outline: 0;
+  color: #006fc9;
+  padding-left: 20px;
+  font-size: 1.0em;
+  font-weight: bolder;
+  outline: 0;
 }
 
 /**
 ul.nav ul li a:hover {
-	background-color: #D3C99C;
-	color: #675C7C;
+  background-color: #D3C99C;
+  color: #675C7C;
 }
 **/
 
 ul.nav ul ul li a {
-	color: silver;
-	padding-left: 40px;
+  color: #006fc9;
+  padding-left: 40px;
 }
 
 ul.nav ul ul ul li a {
-	color: silver;
-	padding-left: 60px;
-	font-size:0.8em;
-	font-weight: bolder;
+  color: #006fc9;
+  padding-left: 60px;
+  font-size:0.8em;
+  font-weight: bolder;
 }
 
 
 /**
 ul.nav ul ul li a:hover {
-	background-color: #D3CEB8;
-	color: #675C7C;
+  background-color: #D3CEB8;
+  color: #675C7C;
 }
 **/
 
 ul.nav span {
-	float: right;
+  float: right;
 }
 
-main {
-	#float: left;
-	width: 60%;
-	word-warp: break-word;
-}
+
 
 section {
-	float: releative;
-	text-align: justify;
-	margin: 20px;
-	padding: 20px;
-	background-color: silver;
-	border-radius: 8px;
+  float: releative;
+  text-align: justify;
+  margin: 20px;
+  padding: 20px;
+  background-color: silver;
+  border-radius: 8px;
 }
 
 
 aside ul {
-	list-style-type: none;
-	#float: fixed;
-	display: block;
+  list-style-type: none;
+  #float: fixed;
+  display: block;
 }
 
 aside ul li a {
-	color: #cdcdcd;
-	font-size: 1em;
-	font-weight: bold;
-	text-decoration: none;
-	#text-align: left;
-	line-height: 20px;
+      color: #006fc9;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  #text-align: left;
+  line-height: 30px;
 }
 
-aside ul li a:hover {
-	background-color: #675C7C;
-	color: white;
+/*img {
+  opacity: 100;
 }
-
+*/
+/*aside ul li a:hover {
+  background-color: #675C7C;
+  color: white;
+}
+*/
 
 p.vcas {
-	font-family: Arial, sans-serif;
-	font-style: italic;
-	font-size: 15px;
-	color: #CC9933;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  color: #CC9933;
 }
 
 pre {
-	font-size: 15px;
-	line-height: 1.5;
-	font-weight: 400;
-	color: #505050;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 200;
+  color: #505050;
+  white-space: pre-wrap;
+  word-wrap: break-word; 
 }
