@@ -8,74 +8,74 @@
 <link rel="shortcut icon" href="imgs/cti_flex_favicon.png"
   type="image/x-icon" />
 <link rel="stylesheet" href="css/main.css" />
-
+<!-- <link rel="stylesheet" href="css/Styles.css" /> -->
 </head>
 
 <body>
         <header class="clearfix">Plugin Basic Test Links</header>
   <div class="container">
-    <nav>
+    <nav id = "menu1" class="menuTree">
       <ul class="nav">
-        <li class="nav-first"><a href="#">HLS</a>
+        <li class="parent"><a href="#hls">HLS</a>
           <ul>
-            <li class="nav-2nd"><a href="#">DRM</a>
+            <li class="parent"><a href="#">DRM</a>
               <ul>
-                <li class="nav-3rd"><a href="#hls-vmx">Verimatrix</a></li>
-                <li class="nav-3rd"><a href="#hls-aes-128">AES-128</a></li>
-                <li class="nav-3rd"><a href="#hls-fairplay">Fariplay</a></li>
+                <li class="child"><a href="#hls-vmx">Verimatrix</a></li>
+                <li class="child"><a href="#hls-aes-128">AES-128</a></li>
+                <li class="child"><a href="#hls-fairplay">Fariplay</a></li>
               </ul></li>
-            <li class="nav-2nd"><a href="#">Subtitles</a>
+            <li class="parent"><a href="#">Subtitles</a>
               <ul>
-                <li class="nav-3rd"><a href="#">In-Manifest</a>
+                <li class="parent"><a href="#">In-Manifest</a>
                   <ul>
-                    <li class="nav-4th"><a href="#hls-manifest-webvtt">WebVTT</a></li>
-                    <li class="nav-4th"><a href="#hls-manifest-smpte">SMPTE</a></li>
+                    <li class="child"><a href="#hls-manifest-webvtt">WebVTT</a></li>
+                    <li class="child"><a href="#hls-manifest-smpte">SMPTE</a></li>
                   </ul></li>
-                <li class="nav-3rd"><a href="#">Embedded</a>
+                <li class="parent"><a href="#">Embedded</a>
                   <ul>
-                    <li class="nav-4th"><a href="#hls-embeded-cc">CEA-608/708</a></li>
-                    <li class="nav-4th"><a href="#hls-embeded-dvb">SMPTE</a></li>
+                    <li class="child"><a href="#hls-embeded-cc">CEA-608/708</a></li>
+                    <li class="child"><a href="#hls-embeded-dvb">SMPTE</a></li>
                   </ul></li>
               </ul></li>
-            <li class="nav-2nd"><a href="#">Tags</a>
+            <li class="parent"><a href="#">Tags</a>
               <ul>
-                <li class="nav-3rd"><a href="#iframe">I-Frames</a></li>
-                <li class="nav-3rd"><a href="#utc">UTC Times</a></li>
-                <li class="nav-3rd"><a href="#Apple">bipbop</a></li>
+                <li class="child"><a href="#iframe">I-Frames</a></li>
+                <li class="child"><a href="#utc">UTC Times</a></li>
+                <li class="child"><a href="#Apple">bipbop</a></li>
               </ul></li>
 
-            <li class="nav-2nd"><a href="#">Assets</a>
+            <li class="parent"><a href="#">Assets</a>
               <ul>
-                <li class="nav-3rd"><a href="#purevideo">Pure Video</a></li>
-                <li class="nav-3rd"><a href="#pureaudio">Pure Audio</a></li>
-                <li class="nav-3rd"><a href="#multi_audio">Multi Audio</a></li>
-                <li class="nav-3rd"><a href="#dynamic_res">H264 SPS</a></li>
+                <li class="child"><a href="#purevideo">Pure Video</a></li>
+                <li class="child"><a href="#pureaudio">Pure Audio</a></li>
+                <li class="child"><a href="#multi_audio">Multi Audio</a></li>
+                <li class="child"><a href="#dynamic_res">H264 SPS</a></li>
               </ul></li>
-            <li class="nav-2nd"><a href="#">Features</a>
+            <li class="parent"><a href="#">Features</a>
               <ul>
-                <li class="nav-3rd"><a href="#gzip">Gzip</a></li>
-                <li class="nav-3rd"><a href="#hls-vtt-thumbnail">VTT Thumbnail</a></li>
-                <li class="nav-3rd"><a href="#bufferingtime">InitialBuffering Time</a></li>
-                <li class="nav-3rd"><a href="#preferred">Set default language</a></li>
-                <li class="nav-3rd"><a href="#cookie">Cookie</a></li>
-                <li class="nav-3rd"><a href="#updateurl">Update URL</a></li>
+                <li class="child"><a href="#gzip">Gzip</a></li>
+                <li class="child"><a href="#hls-vtt-thumbnail">VTT Thumbnail</a></li>
+                <li class="child"><a href="#bufferingtime">InitialBuffering Time</a></li>
+                <li class="child"><a href="#preferred">Set default language</a></li>
+                <li class="child"><a href="#cookie">Cookie</a></li>
+                <li class="child"><a href="#updateurl">Update URL</a></li>
               </ul></li>
-            <li class="nav-2nd"><a href="#https-section">HTTPS</a></li>
-            <li class="nav-2nd"><a href="#live-section">Live</a></li>
-            <li class="nav-2nd"><a href="#hevc-section">HEVC</a></li>
+            <li class="child"><a href="#https-section">HTTPS</a></li>
+            <li class="child"><a href="#live-section">Live</a></li>
+            <li class="child"><a href="#hevc-section">HEVC</a></li>
           </ul></li>
-        <li class="nav-first"><a href="#dash">DASH</a></li>
-        <li class="nav-first"><a href="#pd">PD</a></li>
-        <li class="nav-first"><a href="#ss">SS</a></li>
-        <li class="nav-first"><a href="#">Misc.</a>
+        <li class="child"><a href="#dash">DASH</a></li>
+        <li class="child"><a href="#pd">PD</a></li>
+        <li class="child"><a href="#ss">SS</a></li>
+        <li class="parent"><a href="#misc">Misc.</a>
           <ul>
-            <li class="nav-2nd"><a href="#">External Subtitles</a>
+            <li class="parent"><a href="#">External Subtitles</a>
               <ul>
-                <li class="nav-3rd"><a href="#external-ttml">TTML</a></li>
-                <li class="nav-3rd"><a href="#external-srt">SRT</a></li>
-                <li class="nav-3rd"><a href="#external-smi">SMI</a></li>
-                <li class="nav-3rd"><a href="#external-webvtt">WebVTT</a></li>
-                <li class="nav-3rd"><a href="#external-smpte">SMPTE</a></li>
+                <li class="child"><a href="#external-ttml">TTML</a></li>
+                <li class="child"><a href="#external-srt">SRT</a></li>
+                <li class="child"><a href="#external-smi">SMI</a></li>
+                <li class="child"><a href="#external-webvtt">WebVTT</a></li>
+                <li class="child"><a href="#external-smpte">SMPTE</a></li>
               </ul></li>
           </ul></li>
       </ul>
@@ -531,13 +531,39 @@
 
   <footer>Copyright &copy; 2003-2017 VisualOn Inc. All rights reserved.</footer>
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+
   <script type="application/javascript" src="js/singlepagenav.jquery.js"></script>
-    <script type="application/javascript">
+
+<!--   <script type="text/javascript" src="js/main.js"></script> -->
+
+
+    <script src="js/JQuery-ui.js" type="text/javascript"></script>
+
+    <script src="js/JQuery.MenuTree.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('#menu1').menuTree();
+
+            $('#menu2').menuTree({
+                expandSpeed: 1000,
+                collapseSpeed: 1000,
+                expandEasing: 'easeOutBounce',
+                collapseEasing: 'easeOutBounce',
+                parentMenuTriggerCallback: false,
+                multiOpenedSubMenu: true
+            });
+            $('#menu3').menuTree({
+                expandedNode: '2.1'
+            }, function(rel) {
+                alert(rel);
+            });
+        });
+    </script>
+  <script type="application/javascript">
         jQuery(function(){
             jQuery('.nav').singlePageNav();
         });
-    </script>
-
+ </script>
 </body>
 </html>
