@@ -1,0 +1,36 @@
+header {
+  position: absolute;
+}
+
+.type {
+  padding-top: 0;
+}
+
+p.la_url {
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  color: #524E45;
+  margin: 5px;
+  padding: 5px;
+  border: 2px dashed silver;
+  display: inline;
+}
+
+
+pre.title {
+	  font-size: 16px;
+	  color: #32362B;
+	  -webkit-user-select: none; /* Chrome, Opera, Safari */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    -o-user-select: none;
+    user-select: none; /* Standard syntax */
+}
+
+.user_header {
+  margin: 8px;
+  border: 2px dashed silver;
+  background-color: #D3D3D3;
+  border-radius: 8px;
+}
