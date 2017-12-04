@@ -1,184 +1,176 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>HTML5 DRM Test Links</title>
-	<meta charset="UTF-8" />
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="shortcut icon" href="imgs/cti_flex_favicon.png"
-	type="image/x-icon" />
-	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/drmlinks.css" />
+    <title>HTML5 DRM Test Links</title>
+    <meta charset="UTF-8" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="imgs/cti_flex_favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/drmlinks.css" />
 </head>
 
 <body>
-	<header class="clearfix">HTML5 DRM Test Links</header>
-	<div class="main">
-		<section id="widevine" class="type">
-			<h3>Widevine</h3>
-			<p class="la_url">
-				<span class="prefix">la_url:</span>https://proxy.uat.widevine.com/proxy
-			</p>
-			<ul>
-				<li><pre>https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd</pre>
-				</li>
-			</ul>
-			<p class="la_url">
-				<span class="prefix">la_url:</span>https://widevine-proxy.appspot.com/proxy
-			</p>
-			<ul>
-				<li><pre>https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel-dash-widevine.ism/.mpd</pre></li>
-				<li><pre>https://storage.googleapis.com/shaka-demo-assets/angel-one-widevine/dash.mpd</pre></li>
-				<li><pre>https://storage.googleapis.com/shaka-demo-assets/sintel-widevine/dash.mpd</pre></li>
-				<li><pre class="title">Dynamic SegmentTimeLine</pre> <pre>https://wowzaec2demo.streamlock.net/live/bigbuckbunny-enc-wv.stream/manifest_mvtime.mpd</pre>
-				</li>
-				<li><pre class="title">Dynamic SegmentTemplate</pre> <pre>https://wowzaec2demo.streamlock.net/live/bigbuckbunny-enc-wv.stream/manifest_mvnumber.mpd</pre>
-				</li>
-				<li><pre class="title">Dynamic SegmentList</pre> <pre>https://wowzaec2demo.streamlock.net/live/bigbuckbunny-enc-wv.stream/manifest_mvlist.mpd</pre>
-				</li>
-				<li><pre class="title">Static SegmentTimeLine</pre> <pre>https://wowzaec2demo.streamlock.net/vod/elephantsdream_1100kbps-enc-wv.mp4/manifest_mvtime.mpd</pre>
-				</li>
-				<li><pre class="title">Static SegmentTemplate</pre> <pre>https://wowzaec2demo.streamlock.net/vod/elephantsdream_1100kbps-enc-wv.mp4/manifest_mvnumber.mpd</pre>
-				</li>
-				<li><pre class="title">Static SegmentList</pre> <pre>https://wowzaec2demo.streamlock.net/vod/elephantsdream_1100kbps-enc-wv.mp4/manifest_mvlist.mpd</pre>
-				</li>
-			</ul>
-			<div class="provider">
-				<h6>WOWOW</h6>
-				<pre><a href="https://css.visualon.info/files/SamplePlayer/sampleplayer/index.html" target="_blank">https://css.visualon.info/files/SamplePlayer/sampleplayer/index.html</a></pre>
-				<p class="la_url">
-					<span class="prefix">la_url:</span>https://dev-wow-lcs-proxy.azurewebsites.net/widevine
-				</p>
-				<ul>
-					<li><pre class="title">wowow dvr 1hr</pre> <pre>https://wowlivetestjpeast.streaming.mediaservices.windows.net/ee0356df-1a70-4b53-be2b-c4d149aec2d8/999999.ism/manifest(format=mpd-time-csf,filter=dvr1h)</pre>
-					</li>
-					<li><pre class="title">wowow dvr 4hr</pre> <pre>https://wowlivetestjpeast.streaming.mediaservices.windows.net/ee0356df-1a70-4b53-be2b-c4d149aec2d8/999999.ism/manifest(format=mpd-time-csf,filter=dvr4h)</pre>
-					</li>
-					<li><pre class="title">wowow dvr 8hr</pre> <pre>https://wowlivetestjpeast.streaming.mediaservices.windows.net/ee0356df-1a70-4b53-be2b-c4d149aec2d8/999999.ism/manifest(format=mpd-time-csf,filter=dvr8h)</pre>
-					</li>
-				</ul>
-			</div>
-		</section>
-
-		<section id="playready" class="type">
-			<h3>Playready</h3>
-			<ul>
-				<li><pre class="title">embedded</pre> <pre>http://dash.akamaized.net/dash264/TestCases/6b/microsoft/CENC_HD_Time/CENC_HD_time_MPD.mpd</pre>
-					<pre>http://dash.akamaized.net/dash264/TestCases/6b/microsoft/CENC_SD_Time/CENC_SD_time_MPD.mpd</pre>
-					<pre>http://essdrmproducts-ams.insidesecure.com/content-tc/DASH/Encrypted/Envivio-0509/Manifest.mpd</pre>
-				</li>
-			</ul>
-			<p class="la_url">
-				<span class="prefix">la_url:</span>http://playready-testserver.azurewebsites.net/rightsmanager.asmx?PlayRight=1&amp;UseSimpleNonPersistentLicense=1
-			</p>
-			<ul>
-				<li><pre>http://profficialsite.origin.mediaservices.windows.net/c51358ea-9a5e-4322-8951-897d640fdfd7/tearsofsteel_4k.ism/manifest(format=mpd-time-csf)</pre>
-				</li>
-			</ul>
-			<p class="la_url">
-				<span class="prefix">la_url:</span>https://test.playready.microsoft.com/service/rightsmanager.asmx?PlayRight=1&amp;UseSimpleNonPersistentLicense=1
-			</p>
-			<ul>
-				<li><pre>https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel-dash-playready.ism/.mpd</pre>
-				</li>
-			</ul>
-		</section>
-
-		<section id="fairplay" class="type">
-			<h3>Fairplay</h3>
-			<p class="la_url">
-				<span class="prefix">la_url:</span>http://52.192.152.70:8000/
-			</p>
-			<p class="la_url">
-				<span class="prefix">certificate url:</span>http://52.192.152.70:8000/fairplay_cert
-			</p>
-			<ul>
-				<li><pre>http://videopass-testing-tmp.s3.amazonaws.com/theater/04/999304_499c2573917d4b3979144fc4ac60c40b/1411000004_hls.m3u8</pre>
-				</li>
-			</ul>
-		</section>
-
-		<section id="multi_drm" class="type">
-			<h3>Multi-DRM</h3>
-
-			<h6>Widevine</h6>
-			<p class="la_url">
-				<span class="prefix">la_url:</span>https://drm-widevine-licensing.axtest.net/AcquireLicense
-			</p>
-
-			<h6>Playready</h6>
-			<p class="la_url">
-				<span class="prefix">la_url:</span>https://drm-playready-licensing.axtest.net/AcquireLicense
-			</p>
-
-			<div class="user_header">
-				<pre>header:
+    <header class="clearfix">HTML5 DRM Test Links</header>
+    <div class="main">
+        <section id="widevine" class="type">
+            <h3>Widevine</h3>
+            <p class="la_url">
+                <span class="prefix">la_url:</span>https://proxy.uat.widevine.com/proxy
+            </p>
+            <ul>
+                <li><pre>https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd</pre>
+                </li>
+            </ul>
+            <p class="la_url">
+                <span class="prefix">la_url:</span>https://widevine-proxy.appspot.com/proxy
+            </p>
+            <ul>
+                <li><pre>https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel-dash-widevine.ism/.mpd</pre></li>
+                <li><pre>https://storage.googleapis.com/shaka-demo-assets/angel-one-widevine/dash.mpd</pre></li>
+                <li><pre>https://storage.googleapis.com/shaka-demo-assets/sintel-widevine/dash.mpd</pre></li>
+                <li><pre class="title">Dynamic SegmentTimeLine</pre> <pre>https://wowzaec2demo.streamlock.net/live/bigbuckbunny-enc-wv.stream/manifest_mvtime.mpd</pre>
+                </li>
+                <li><pre class="title">Dynamic SegmentTemplate</pre> <pre>https://wowzaec2demo.streamlock.net/live/bigbuckbunny-enc-wv.stream/manifest_mvnumber.mpd</pre>
+                </li>
+                <li><pre class="title">Dynamic SegmentList</pre> <pre>https://wowzaec2demo.streamlock.net/live/bigbuckbunny-enc-wv.stream/manifest_mvlist.mpd</pre>
+                </li>
+                <li><pre class="title">Static SegmentTimeLine</pre> <pre>https://wowzaec2demo.streamlock.net/vod/elephantsdream_1100kbps-enc-wv.mp4/manifest_mvtime.mpd</pre>
+                </li>
+                <li><pre class="title">Static SegmentTemplate</pre> <pre>https://wowzaec2demo.streamlock.net/vod/elephantsdream_1100kbps-enc-wv.mp4/manifest_mvnumber.mpd</pre>
+                </li>
+                <li><pre class="title">Static SegmentList</pre> <pre>https://wowzaec2demo.streamlock.net/vod/elephantsdream_1100kbps-enc-wv.mp4/manifest_mvlist.mpd</pre>
+                </li>
+            </ul>
+            <div class="provider">
+                <h6>WOWOW</h6>
+                <pre><a href="https://css.visualon.info/files/SamplePlayer/sampleplayer/index.html" target="_blank">https://css.visualon.info/files/SamplePlayer/sampleplayer/index.html</a></pre>
+                <p class="la_url">
+                    <span class="prefix">la_url:</span>https://dev-wow-lcs-proxy.azurewebsites.net/widevine
+                </p>
+                <ul>
+                    <li><pre class="title">dvr 1hr</pre><pre>https://wowlivetestjpeast.streaming.mediaservices.windows.net/ee0356df-1a70-4b53-be2b-c4d149aec2d8/999999.ism/manifest(format=mpd-time-csf,filter=dvr1h)</pre>
+                    </li>
+                    <li><pre class="title">dvr 2hr</pre><pre>https://wowlivetestjpeast.streaming.mediaservices.windows.net/2f86f6de-1c97-476b-8c69-a1d1b60d4268/999999.ism/manifest(format=mpd-time-csf,filter=dvr2h)</pre>
+                    </li>
+                    <li><pre class="title">dvr 4hr</pre><pre>https://wowlivetestjpeast.streaming.mediaservices.windows.net/2f86f6de-1c97-476b-8c69-a1d1b60d4268/999999.ism/manifest(format=mpd-time-csf,filter=dvr4h)</pre></li>
+                    <li><pre class="title">dvr 8hr</pre><pre>https://wowlivetestjpeast.streaming.mediaservices.windows.net/2f86f6de-1c97-476b-8c69-a1d1b60d4268/999999.ism/manifest(format=mpd-time-csf,filter=dvr8h)</pre></li>
+                    <li><pre class="title">dvr 12hr</pre><pre>https://wowlivetestjpeast.streaming.mediaservices.windows.net/2f86f6de-1c97-476b-8c69-a1d1b60d4268/999999.ism/manifest(format=mpd-time-csf,filter=dvr12h)</pre>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="playready" class="type">
+            <h3>Playready</h3>
+            <ul>
+                <li><pre class="title">embedded</pre> <pre>http://dash.akamaized.net/dash264/TestCases/6b/microsoft/CENC_HD_Time/CENC_HD_time_MPD.mpd</pre>
+                    <pre>http://dash.akamaized.net/dash264/TestCases/6b/microsoft/CENC_SD_Time/CENC_SD_time_MPD.mpd</pre>
+                    <pre>http://essdrmproducts-ams.insidesecure.com/content-tc/DASH/Encrypted/Envivio-0509/Manifest.mpd</pre>
+                </li>
+            </ul>
+            <p class="la_url">
+                <span class="prefix">la_url:</span>http://playready-testserver.azurewebsites.net/rightsmanager.asmx?PlayRight=1&amp;UseSimpleNonPersistentLicense=1
+            </p>
+            <ul>
+                <li><pre>http://profficialsite.origin.mediaservices.windows.net/c51358ea-9a5e-4322-8951-897d640fdfd7/tearsofsteel_4k.ism/manifest(format=mpd-time-csf)</pre>
+                </li>
+            </ul>
+            <p class="la_url">
+                <span class="prefix">la_url:</span>https://test.playready.microsoft.com/service/rightsmanager.asmx?PlayRight=1&amp;UseSimpleNonPersistentLicense=1
+            </p>
+            <ul>
+                <li><pre>https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel-dash-playready.ism/.mpd</pre>
+                </li>
+            </ul>
+        </section>
+        <section id="fairplay" class="type">
+            <h3>Fairplay</h3>
+            <p class="la_url">
+                <span class="prefix">la_url:</span>http://52.192.152.70:8000/
+            </p>
+            <p class="la_url">
+                <span class="prefix">certificate url:</span>http://52.192.152.70:8000/fairplay_cert
+            </p>
+            <ul>
+                <li><pre>http://videopass-testing-tmp.s3.amazonaws.com/theater/04/999304_499c2573917d4b3979144fc4ac60c40b/1411000004_hls.m3u8</pre>
+                </li>
+            </ul>
+        </section>
+        <section id="multi_drm" class="type">
+            <h3>Multi-DRM</h3>
+            <h6>Widevine</h6>
+            <p class="la_url">
+                <span class="prefix">la_url:</span>https://drm-widevine-licensing.axtest.net/AcquireLicense
+            </p>
+            <h6>Playready</h6>
+            <p class="la_url">
+                <span class="prefix">la_url:</span>https://drm-playready-licensing.axtest.net/AcquireLicense
+            </p>
+            <div class="user_header">
+                <pre>header:
 				X-AxDRM-Message</pre>
-				<pre>value:
+                <pre>value:
 					<code>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLCJjb21fa2V5X2lkIjoiNjllNTQwODgtZTllMC00NTMwLThjMWEtMWViNmRjZDBkMTRlIiwibWVzc2FnZSI6eyJ0eXBlIjoiZW50aXRsZW1lbnRfbWVzc2FnZSIsImtleXMiOlt7ImlkIjoiNmU1YTFkMjYtMjc1Ny00N2Q3LTgwNDYtZWFhNWQxZDM0YjVhIn1dfX0.yF7PflOPv9qHnu3ZWJNZ12jgkqTabmwXbDWk_47tLNE</code>
 				</pre>
-				<ul>
-					<li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM/Manifest_1080p.mpd</pre></li>
-					<li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM/Manifest.mpd (4K)</pre></li>
-					<li><pre>http://media.axprod.net/TestVectors/v6-MultiDRM-GenericEmePssh/Manifest_1080p.mpd</pre></li>
-					<li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM-GenericEmePssh/Manifest.mpd (4K)</pre></li>
-				</ul>
-			</div>
-
-			<div class="user_header">
-				<pre>header:
+                <ul>
+                    <li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM/Manifest_1080p.mpd</pre></li>
+                    <li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM/Manifest.mpd (4K)</pre></li>
+                    <li><pre>http://media.axprod.net/TestVectors/v6-MultiDRM-GenericEmePssh/Manifest_1080p.mpd</pre></li>
+                    <li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM-GenericEmePssh/Manifest.mpd (4K)</pre></li>
+                </ul>
+            </div>
+            <div class="user_header">
+                <pre>header:
 				X-AxDRM-Message</pre>
-				<pre>value:
+                <pre>value:
 					<code>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLCJjb21fa2V5X2lkIjoiNjllNTQwODgtZTllMC00NTMwLThjMWEtMWViNmRjZDBkMTRlIiwibWVzc2FnZSI6eyJ0eXBlIjoiZW50aXRsZW1lbnRfbWVzc2FnZSIsImtleXMiOlt7ImlkIjoiMTUzMGQzYTAtNjkwNC00NDZhLTkxYTEtMzNhMTE1YWE4YzQxIn0seyJpZCI6ImM4M2ViNjM5LWU2NjQtNDNmOC1hZTk4LTQwMzliMGMxM2IyZCJ9LHsiaWQiOiIzZDhjYzc2Mi0yN2FjLTQwMGYtOTg5Zi04YWI1ZGM3ZDc3NzUifSx7ImlkIjoiYmQ4ZGFkNTgtMDMyZC00YzI1LTg5ZmEtYzdiNzEwZTgyYWMyIn1dfX0.9t18lFmZFVHMzpoZxYDyqOS0Bk_evGhTBw_F2JnAK2k</code>
 				</pre>
-				<ul>
-					<li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM-MultiKey/Manifest_1080p.mpd</pre></li>
-					<li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM-MultiKey/Manifest.mpd (4K)</pre></li>
-				</ul>
-			</div>
-
-			<div class="user_header">
-				<pre>header:
+                <ul>
+                    <li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM-MultiKey/Manifest_1080p.mpd</pre></li>
+                    <li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM-MultiKey/Manifest.mpd (4K)</pre></li>
+                </ul>
+            </div>
+            <div class="user_header">
+                <pre>header:
 				X-AxDRM-Message</pre>
-				<pre>value:
+                <pre>value:
 					<code>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLCJjb21fa2V5X2lkIjoiNjllNTQwODgtZTllMC00NTMwLThjMWEtMWViNmRjZDBkMTRlIiwibWVzc2FnZSI6eyJ0eXBlIjoiZW50aXRsZW1lbnRfbWVzc2FnZSIsImtleXMiOlt7ImlkIjoiNTNiZTc3NTctNzI4OC00YjZiLWIyMGEtZjA1YjY0YTRlZjc5In0seyJpZCI6IjBlZDgyMWE4LTgwZWQtNDBhYy1hODA0LTkyN2M5ZmRhZGJlOSJ9LHsiaWQiOiJlNDdkNzhjYS05NGRjLTQ1ZmItOWUzZC0yYTc3M2FlZjc0YjIifSx7ImlkIjoiMzJhMTQxZTktMjNhYi00NGZmLWE2YzctNTM0OWM4OTQ1MWNmIn0seyJpZCI6IjhkMDkxOTY2LTQ0YjUtNGNmOC04YTQ1LWVkMTJmZGIxOGQzNSJ9XX19.9YSK6QsDr4SYR7Q74ftq9mVtsT0ZkP3STE0zI-3mVIA</code>
 				</pre>
-				<ul>
-					<li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM-MultiKey-MultiPeriod/Manifest_1080p.mpd</pre></li>
-					<li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM-MultiKey-MultiPeriod/Manifest.mpd (4K)</pre></li>
-				</ul>
-			</div>
-
-			<div class="user_header">
-				<pre>header:
+                <ul>
+                    <li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM-MultiKey-MultiPeriod/Manifest_1080p.mpd</pre></li>
+                    <li><pre>https://media.axprod.net/TestVectors/v6-MultiDRM-MultiKey-MultiPeriod/Manifest.mpd (4K)</pre></li>
+                </ul>
+            </div>
+            <div class="user_header">
+                <pre>header:
 				X-AxDRM-Message</pre>
-				<pre>value:
+                <pre>value:
 					<code>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoxLCJjb21fa2V5X2lkIjoiYjMzNjRlYjUtNTFmNi00YWUzLThjOTgtMzNjZWQ1ZTMxYzc4IiwibWVzc2FnZSI6eyJ0eXBlIjoiZW50aXRsZW1lbnRfbWVzc2FnZSIsImtleXMiOlt7ImlkIjoiOWViNDA1MGQtZTQ0Yi00ODAyLTkzMmUtMjdkNzUwODNlMjY2IiwiZW5jcnlwdGVkX2tleSI6ImxLM09qSExZVzI0Y3Iya3RSNzRmbnc9PSJ9XX19.4lWwW46k-oWcah8oN18LPj5OLS5ZU-_AQv7fe0JhNjA</code>
 				</pre>
-				<ul>
-					<li><pre>https://media.axprod.net/TestVectors/v7-MultiDRM-SingleKey/Manifest_AudioOnly.mpd</pre></li>
-					<li><pre>https://media.axprod.net/TestVectors/v7-MultiDRM-SingleKey/Manifest_1080p.mpd</pre></li>
-					<li><pre>https://media.axprod.net/TestVectors/v7-MultiDRM-SingleKey/Manifest.mpd (4K)</pre></li>
-				</ul>
-			</div>
-
-
-			<div class="user_header">
-				<pre>header:
+                <ul>
+                    <li><pre>https://media.axprod.net/TestVectors/v7-MultiDRM-SingleKey/Manifest_AudioOnly.mpd</pre></li>
+                    <li><pre>https://media.axprod.net/TestVectors/v7-MultiDRM-SingleKey/Manifest_1080p.mpd</pre></li>
+                    <li><pre>https://media.axprod.net/TestVectors/v7-MultiDRM-SingleKey/Manifest.mpd (4K)</pre></li>
+                </ul>
+            </div>
+            <div class="user_header">
+                <pre>header:
 				X-AxDRM-Message</pre>
-				<pre>value:
+                <pre>value:
 					<code>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoxLCJjb21fa2V5X2lkIjoiYjMzNjRlYjUtNTFmNi00YWUzLThjOTgtMzNjZWQ1ZTMxYzc4IiwibWVzc2FnZSI6eyJ0eXBlIjoiZW50aXRsZW1lbnRfbWVzc2FnZSIsImtleXMiOlt7ImlkIjoiMDg3Mjc4NmUtZjllNy00NjVmLWEzYTItNGU1YjBlZjhmYTQ1IiwiZW5jcnlwdGVkX2tleSI6IlB3NitlRVlOY3ZqWWJmc2gzWDNmbWc9PSJ9LHsiaWQiOiJjMTRmMDcwOS1mMmI5LTQ0MjctOTE2Yi02MWI1MjU4NjUwNmEiLCJlbmNyeXB0ZWRfa2V5IjoiLzErZk5paDM4bXFSdjR5Y1l6bnQvdz09In0seyJpZCI6IjhiMDI5ZTUxLWQ1NmEtNDRiZC05MTBmLWQ0YjVmZDkwZmJhMiIsImVuY3J5cHRlZF9rZXkiOiJrcTBKdVpFanBGTjhzYVRtdDU2ME9nPT0ifSx7ImlkIjoiMmQ2ZTkzODctNjBjYS00MTQ1LWFlYzItYzQwODM3YjRiMDI2IiwiZW5jcnlwdGVkX2tleSI6IlRjUlFlQld4RW9IT0tIcmFkNFNlVlE9PSJ9LHsiaWQiOiJkZTAyZjA3Zi1hMDk4LTRlZTAtYjU1Ni05MDdjMGQxN2ZiYmMiLCJlbmNyeXB0ZWRfa2V5IjoicG9lbmNTN0dnbWVHRmVvSjZQRUFUUT09In0seyJpZCI6IjkxNGU2OWY0LTBhYjMtNDUzNC05ZTlmLTk4NTM2MTVlMjZmNiIsImVuY3J5cHRlZF9rZXkiOiJlaUkvTXNsbHJRNHdDbFJUL0xObUNBPT0ifSx7ImlkIjoiZGE0NDQ1YzItZGI1ZS00OGVmLWIwOTYtM2VmMzQ3YjE2YzdmIiwiZW5jcnlwdGVkX2tleSI6IjJ3K3pkdnFycERWM3hSMGJKeTR1Z3c9PSJ9LHsiaWQiOiIyOWYwNWU4Zi1hMWFlLTQ2ZTQtODBlOS0yMmRjZDQ0Y2Q3YTEiLCJlbmNyeXB0ZWRfa2V5IjoiL3hsU0hweHdxdTNnby9nbHBtU2dhUT09In0seyJpZCI6IjY5ZmU3MDc3LWRhZGQtNGI1NS05NmNkLWMzZWRiMzk5MTg1MyIsImVuY3J5cHRlZF9rZXkiOiJ6dTZpdXpOMnBzaTBaU3hRaUFUa1JRPT0ifV19fQ.BXr93Et1krYMVs-CUnf7F3ywJWFRtxYdkR7Qn4w3-to</code>
 				</pre>
-				<ul>
-					<li><pre>https://media.axprod.net/TestVectors/v7-MultiDRM-MultiKey-MultiPeriod/Manifest_AudioOnly.mpd</pre></li>
-					<li><pre>https://media.axprod.net/TestVectors/v7-MultiDRM-MultiKey-MultiPeriod/Manifest_1080p.mpd</pre></li>
-					<li><pre>https://media.axprod.net/TestVectors/v7-MultiDRM-MultiKey-MultiPeriod/Manifest.mpd (4K)</pre></li>
-				</ul>
-			</div>
-			<setcion></setcion>
-		</section>
-	</div>
-	<footer>Copyright &copy; 2003-2017 VisualOn Inc. All rights
-	reserved.</footer>
+                <ul>
+                    <li><pre>https://media.axprod.net/TestVectors/v7-MultiDRM-MultiKey-MultiPeriod/Manifest_AudioOnly.mpd</pre></li>
+                    <li><pre>https://media.axprod.net/TestVectors/v7-MultiDRM-MultiKey-MultiPeriod/Manifest_1080p.mpd</pre></li>
+                    <li><pre>https://media.axprod.net/TestVectors/v7-MultiDRM-MultiKey-MultiPeriod/Manifest.mpd (4K)</pre></li>
+                </ul>
+            </div>
+            <setcion></setcion>
+        </section>
+    </div>
+    <footer>Copyright &copy; 2003-2017 VisualOn Inc. All rights reserved.
+    </footer>
 </body>
+
 </html>
