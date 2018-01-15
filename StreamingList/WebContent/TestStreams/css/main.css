@@ -327,6 +327,21 @@ pre {
     color: #505050;
 }
 
+.Ads-Tags ul li a {
+	text-decoration: none;
+}
+
+
+#radiantmediaplayer-tags ol {
+	padding-left:0px;
+}
+
+#radiantmediaplayer-tags ol li {
+	display:inline-block;
+	padding-right:20px;
+	list-style-type: none;
+}
+
 ::selection {
     color: #c93;
 }
