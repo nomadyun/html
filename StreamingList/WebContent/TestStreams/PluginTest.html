@@ -2,706 +2,798 @@
 <html>
 
 <head>
-    <title>Plugin basic Test Links</title>
-    <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="imgs/cti_flex_favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/main.css" />
+<title>Plugin basic Test Links</title>
+<meta charset="UTF-8" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" href="imgs/cti_flex_favicon.png"
+	type="image/x-icon" />
+<link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-    <header class="clearfix">Plugin Basic Test Links</header>
-    <div class="container">
-        <nav id="menu1" class="menuTree">
-            <ul class="nav">
-                <li class="parent"><a href="#hls">HLS</a>
-                    <ul>
-                        <li class="parent"><a href="#">DRM</a>
-                            <ul>
-                                <li class="child"><a href="#hls-vmx">Verimatrix</a></li>
-                                <li class="child"><a href="#hls-aes-128">AES-128</a></li>
-                                <li class="child"><a href="#hls-fairplay">Fariplay</a></li>
-                            </ul>
-                        </li>
-                        <li class="parent"><a href="#">Subtitles</a>
-                            <ul>
-                                <li class="parent"><a href="#">In-Manifest</a>
-                                    <ul>
-                                        <li class="child"><a href="#hls-manifest-webvtt">WebVTT</a></li>
-                                        <li class="child"><a href="#hls-manifest-smpte">SMPTE</a></li>
-                                    </ul>
-                                </li>
-                                <li class="parent"><a href="#">Embedded</a>
-                                    <ul>
-                                        <li class="child"><a href="#hls-embeded-cc">CEA-608/708</a></li>
-                                        <li class="child"><a href="#hls-embeded-dvb">SMPTE</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="parent"><a href="#">Tags</a>
-                            <ul>
-                                <li class="child"><a href="#iframe">I-Frames</a></li>
-                                <li class="child"><a href="#utc">UTC Times</a></li>
-                                <li class="child"><a href="#Apple">bipbop</a></li>
-                            </ul>
-                        </li>
-                        <li class="parent"><a href="#">Assets</a>
-                            <ul>
-                                <li class="child"><a href="#purevideo">Pure Video</a></li>
-                                <li class="child"><a href="#pureaudio">Pure Audio</a></li>
-                                <li class="child"><a href="#multi_audio">Multi Audio</a></li>
-                                <li class="child"><a href="#dynamic_res">H264 SPS</a></li>
-                                <li class="child"><a href="#hls_4k">4K</a></li>
-                            </ul>
-                        </li>
-                        <li class="parent"><a href="#">Features</a>
-                            <ul>
-                                <li class="child"><a href="#gzip">Gzip</a></li>
-                                <li class="child"><a href="#hls-vtt-thumbnail">VTT Thumbnail</a></li>
-                                <li class="child"><a href="#bufferingtime">InitialBuffering Time</a></li>
-                                <li class="child"><a href="#preferred">Set default language</a></li>
-                                <li class="child"><a href="#cookie">Cookie</a></li>
-                                <li class="child"><a href="#updateurl">Update URL</a></li>
-                            </ul>
-                        </li>
-                        <li class="child"><a href="#https-section">HTTPS</a></li>                        
-                        <li class="child"><a href="#live-section">Live</a></li>
-                        <li class="child"><a href="#hevc-section">HEVC</a></li>
-                    </ul>
-                </li>
-                <li class="parent"><a href="#dash">DASH</a>
-	                <ul>
-	                	<li class="parent"><a href="#">Features</a>
-		                	<ul>
-		                	  <li class="child"><a href="#dash-vtt-thumbnail">VTT Thumbnail</a></li>
-		                	</ul>
-	                	</li>
-		                <li class="child"><a href="#dash-live">Live</a></li>
-		                <li class="child"><a href="#dash-ba">BA</a></li>
-		                <li class="child"><a href="#dash-4k">4K</a></li>
-		                <li class="parent"><a href="#dash-drm">DRM</a>
-		                	<ul>
-					            <li class="child"><a href="#dash-widevine">Widevine</a></li>
-				                <li class="child"><a href="#dash-vmx">VMX</a></li>
-		                	 </ul>
-		                </li>
-		              </ul>
-		          </li>
-                <li class="child"><a href="#pd">PD</a></li>
-                <li class="child"><a href="#ss">SS</a></li>
-                <li class="parent"><a href="#misc">Misc.</a>
-                    <ul>
-                        <li class="parent"><a href="#">External Subtitles</a>
-                            <ul>
-                                <li class="child"><a href="#external-ttml">TTML</a></li>
-                                <li class="child"><a href="#external-srt">SRT</a></li>
-                                <li class="child"><a href="#external-smi">SMI</a></li>
-                                <li class="child"><a href="#external-webvtt">WebVTT</a></li>
-                                <li class="child"><a href="#external-smpte">SMPTE</a></li>
-                            </ul>
-                        </li>
+	<header class="clearfix">Plugin Basic Test Links</header>
+	<div class="container">
+		<nav id="menu1" class="menuTree">
+			<ul class="nav">
+				<li class="parent"><a href="#hls">HLS</a>
+					<ul>
+						<li class="parent"><a href="#">DRM</a>
+							<ul>
+								<li class="child"><a href="#hls-vmx">Verimatrix</a></li>
+								<li class="child"><a href="#hls-aes-128">AES-128</a></li>
+								<li class="child"><a href="#hls-fairplay">Fariplay</a></li>
+							</ul></li>
+						<li class="parent"><a href="#">Subtitles</a>
+							<ul>
+								<li class="parent"><a href="#">In-Manifest</a>
+									<ul>
+										<li class="child"><a href="#hls-manifest-webvtt">WebVTT</a></li>
+										<li class="child"><a href="#hls-manifest-smpte">SMPTE</a></li>
+									</ul></li>
+								<li class="parent"><a href="#">Embedded</a>
+									<ul>
+										<li class="child"><a href="#hls-embeded-cc">CEA-608/708</a></li>
+										<li class="child"><a href="#hls-embeded-dvb">SMPTE</a></li>
+									</ul></li>
+							</ul></li>
+						<li class="parent"><a href="#">Tags</a>
+							<ul>
+								<li class="child"><a href="#iframe">I-Frames</a></li>
+								<li class="child"><a href="#utc">UTC Times</a></li>
+								<li class="child"><a href="#Apple">bipbop</a></li>
+							</ul></li>
+						<li class="parent"><a href="#">Assets</a>
+							<ul>
+								<li class="child"><a href="#purevideo">Pure Video</a></li>
+								<li class="child"><a href="#pureaudio">Pure Audio</a></li>
+								<li class="child"><a href="#multi_audio">Multi Audio</a></li>
+								<li class="child"><a href="#dynamic_res">H264 SPS</a></li>
+								<li class="child"><a href="#hls_4k">4K</a></li>
+							</ul></li>
+						<li class="parent"><a href="#">Features</a>
+							<ul>
+								<li class="child"><a href="#gzip">Gzip</a></li>
+								<li class="child"><a href="#hls-vtt-thumbnail">VTT
+										Thumbnail</a></li>
+								<li class="child"><a href="#bufferingtime">InitialBuffering
+										Time</a></li>
+								<li class="child"><a href="#preferred">Set default
+										language</a></li>
+								<li class="child"><a href="#cookie">Cookie</a></li>
+								<li class="child"><a href="#updateurl">Update URL</a></li>
+							</ul></li>
+						<li class="child"><a href="#https-section">HTTPS</a></li>
+						<li class="child"><a href="#live-section">Live</a></li>
+						<li class="child"><a href="#hevc-section">HEVC</a></li>
+					</ul></li>
+				<li class="parent"><a href="#dash">DASH</a>
+					<ul>
+						<li class="parent"><a href="#">Features</a>
+							<ul>
+								<li class="child"><a href="#dash-vtt-thumbnail">VTT
+										Thumbnail</a></li>
+							</ul></li>
+						<li class="child"><a href="#dash-live">Live</a></li>
+						<li class="child"><a href="#dash-ba">BA</a></li>
+						<li class="child"><a href="#dash-4k">4K</a></li>
+						<li class="parent"><a href="#dash-drm">DRM</a>
+							<ul>
+								<li class="child"><a href="#dash-widevine">Widevine</a></li>
+								<li class="child"><a href="#dash-vmx">VMX</a></li>
+							</ul></li>
+					</ul></li>
+				<li class="child"><a href="#pd">PD</a></li>
+				<li class="child"><a href="#ss">SS</a></li>
+				<li class="parent"><a href="#misc">Misc.</a>
+					<ul>
+						<li class="parent"><a href="#">External Subtitles</a>
+							<ul>
+								<li class="child"><a href="#external-ttml">TTML</a></li>
+								<li class="child"><a href="#external-srt">SRT</a></li>
+								<li class="child"><a href="#external-smi">SMI</a></li>
+								<li class="child"><a href="#external-webvtt">WebVTT</a></li>
+								<li class="child"><a href="#external-smpte">SMPTE</a></li>
+							</ul></li>
 
-                        <li class="parent"><a href="#">Ads Tags</a>
-                            <ul>
-                                <li class="child"><a href="#IMA-Sample-Tags">IMA Sample Tags</a></li>
-                                <li class="child"><a href="#radiantmediaplayer-tags">RadiantMediaPlayer Tags</a></li>
-                                <li class="child"><a href="#jwplayer-tags">JW Player Tags</a></li>
-                                <li class="child"><a href="#other-tags">Other Tags</a></li>
-                            </ul>
-                        </li>
+						<li class="parent"><a href="#">Ads Tags</a>
+							<ul>
+								<li class="child"><a href="#IMA-Sample-Tags">IMA Sample
+										Tags</a></li>
+								<li class="child"><a href="#radiantmediaplayer-tags">RadiantMediaPlayer
+										Tags</a></li>
+								<li class="child"><a href="#jwplayer-tags">JW Player
+										Tags</a></li>
+								<li class="child"><a href="#other-tags">Other Tags</a></li>
+							</ul></li></li>
+			</ul>
+		</nav>
+		<div class="main">
+			<section id="hls" class="protocol">
+				<h3>HLS</h3>
+				<div id="hls-drm-section">
+					<h4>DRM</h4>
+					<div id="hls-vmx">
+						<h5>Verimatrix</h5>
+						<p class="vcas">
+							<span class="prefix">VCAS:</span>public-ott-nodrm.verimatrix.com:80
+						</p>
+						<pre></pre>
+						<ul>
+							<li><pre>http://d3esberis2t9z4.cloudfront.net/vod/air-race-01-encrypt/index-nodrm.m3u8</pre>
+							</li>
+							<li><pre>https://s3.amazonaws.com/ott-content/vod/elemental/cars/cars-nodrm.m3u8</pre>
+							</li>
+							<li><pre>http://d3esberis2t9z4.cloudfront.net/vod/making-culture-01-encrypt/index-nodrm.m3u8</pre>
+							</li>
+							<h6>VideoMark</h6>
+							<li><pre>http://ott-content.s3.amazonaws.com/vod/CCD153A3-9F60-4D5B-A6F9-15FEF46C0A0E/index.m3u8</pre>
+							</li>
+							<li><pre>http://s3.amazonaws.com/ott-content/vod/A65E7915-1395-4539-B105-C9F14E895AF4/index.m3u8</pre>
+							</li>
+						</ul>
+						<p class="vcas">
+							<span class="prefix">VCAS:</span>hlscsm.webtv.telia.com:8014
+						</p>
+						<pre></pre>
+						<ul>
+							<li><pre>curl -s -I http://rr.webtv.telia.com:8090/114_hls_national_geographics_wild</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="hls-aes-128">
+						<h5>Open AES-128</h5>
+						<ul>
+							<li><pre>http://stream1.visualon.com:8082/hls/closedcaption/0909_cc9_m/1C_index.m3u8</pre>
+							</li>
+							<li><pre>http://stream1.visualon.com:8082/hls/closedcaption/0926_01/1C_index.m3u8</pre>
+							</li>
+							<li><pre>http://stream1.visualon.com:8082/hls/closedcaption/0926_02/1C_index.m3u8</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="hls-fairplay">
+						<h5>Sample-AES(FairPlay)</h5>
+						<ul>
+							<li><pre>http://stream2.visualon.com/hls/Customers/SampleAes/SampleAesContent/index.m3u8</pre>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="hls-subtitles-section">
+					<h4>Subtitles</h4>
+					<div id="hls-in-manifest" class="in-manifest">
+						<h5>In-Manifest</h5>
+						<div id="hls-manifest-webvtt">
+							<h6>WebVTT</h6>
+							<ul>
+								<li><pre>http://stream1.visualon.com:8082/hls/closedcaption/webvtt/22627/all.m3u8</pre>
+								</li>
+								<li><pre>http://stream1.visualon.com:8082/hls/Customers/Discretix/23244/MyMovie_HLS_25FPS_Clr/MyMovie.m3u8</pre>
+								</li>
+							</ul>
+						</div>
+						<div id="hls-manifest-smpte">
+							<h6>SMPTE:</h6>
+							<ul>
+								<li><pre>http://stream1.visualon.com:8082/hls/closedcaption/SMPTE/Harmonic/index.m3u8</pre>
+								</li>
+								<li><pre>http://stream1.visualon.com:8082/hls/closedcaption/SMPTE/Channel(subhls_test)/index.m3u8</pre>
+								</li>
+								<li><pre>http://testharmonic.com/Content/SS/Live/Channel(subss_test).isml/Manifest</pre>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="hls-embedded" class="embedded">
+						<h5>Embedded</h5>
+						<div id="hls-embeded-cc">
+							<h6>CEA-608/708</h6>
+							<ul>
+								<li><pre>http://stream1.visualon.com:8082/hls/closedcaption/cc_special/177C_640x480_612K_29f.m3u8</pre>
+								</li>
+								<li><pre>http://stream1.visualon.com:8082/hls/closedcaption/closedcaption/43C_480x320_824K.m3u8</pre>
+								</li>
+								<li><pre>http://stream1.visualon.com:8082/hls/closedcaption/closedcaption/10C_480x360_824K.m3u8</pre>
+								</li>
+							</ul>
+						</div>
+						<div id="hls-embeded-dvb">
+							<h6>DVB_Multi(check time align)</h6>
+							<ul>
+								<li><pre>http://stream1.visualon.com:8082/hls/closedcaption/DVB/DVB_1.m3u8</pre>
+								</li>
+								<li><pre>http://stream1.visualon.com:8082/hls/closedcaption/DVB/bird.m3u8</pre>
+								</li>
+								<li><pre>http://stream1.visualon.com:8082/hls/Customers/Ericsson/vod6/index.m3u8</pre>
+								</li>
+							</ul>
+							<h6>TeliaSonera DVB ID3</h6>
+							<ul>
+								<li><pre>http://stream1.visualon.com:8082/hls/cUstomers/TeliaSonera/37337/index.m3u8</pre>
+								</li>
+								<li><pre> (DVB(dan_fin)_webvtt(swe))</pre> <pre>http://stream1.visualon.com:8082/hls/Customers/TeliaSonera/44772/dvb_vtt/index.m3u8</pre>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="tags-section">
+					<h4>Tags Support</h4>
+					<div id="iframe">
+						<h5>I-Frames</h5>
+						<ul>
+							<li><pre>http://stream1.visualon.com:8082/hls/Frank/668191947/668191947.m3u8</pre>
+							</li>
+							<li><pre>http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
+</pre></li>
+						</ul>
+					</div>
+					<div id="utc">
+						<h5>UTC Time:</h5>
+						<ul>
+							<li><pre>http://stream1.visualon.com:8082/hls/UTC/index.m3u8</pre>
+							</li>
+							<li><pre>http://stream1.visualon.com:8082/tasklink/67173/index_utcplus0800.m3u8
+</pre>
+							</li>
+							<li><pre>http://stream1.visualon.com:8082/tasklink/67173/index_utcsub08.m3u8
+</pre>
+							</li>
+							<li><pre>http://stream1.visualon.com:8082/tasklink/67173/index_utcsub0930.m3u8
+</pre>
+							</li>
+							<li><pre>http://stream1.visualon.com:8082/tasklink/67173/index_utcZ.m3u8
+</pre>
+							</li>																												
+						</ul>
+						
+					</div>
+					<div id="Apple">
+						<h5>bipbop</h5>
+						<ul>
+							<li><pre>V8</pre> <pre>http://stream1.visualon.com:8082/hls/v8/bipbop_16x9_variant1.m3u8</pre>
+							</li>
+							<li><pre>Basic stream</pre> <pre>http://stream2.visualon.com/hls/apple/bipbop_16x9/bipbop_16x9_variant.m3u8</pre>
+							</li>
+							<li><pre>Advanced stream (HEVC/H.264) fmp4</pre> <pre>http://stream2.visualon.com/hls/apple/bipbop_adv_example_hevc/master.m3u8</pre>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="assets-section">
+					<h4>Assets</h4>
+					<div id="purevideo">
+						<h5>PURE Video</h5>
+						<ul>
+							<li><pre>http://stream1.visualon.com:8082/hls/videoonly/stream/videoonly.m3u8</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="pureaudio">
+						<h5>PURE Audio</h5>
+						<ul>
+							<li><pre>http://stream1.visualon.com:8082/hls/customers/mdialog/new/pre_mid_post_roll_1/audio.m3u8</pre>
+							</li>
+							<li><pre>http://stream1.visualon.com:8082/hls/Customers/HBO/aac/index.m3u8 (ID3)</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="multi_audio">
+						<h5>Multi_Audio</h5>
+						<ul>
+							<li><pre>http://stream1.visualon.com:8082/hls/multiaudio/MultiAudioOption10/1/multiaudio.m3u8</pre>
+							</li>
+							<li><pre>http://stream1.visualon.com:8082/hls/multiaudio/MultiAudioOption10/MultiAO1/multiaudio.m3u8</pre>
+							</li>
+							<li><pre>http://stream1.visualon.com:8082/hls/multiaudio/MultiAudioOption10/MultiAO2/multiav.m3u8
+</pre></li>
+						</ul>
+					</div>
+					<div id="dynamic_res">
+						<h5>H264 SPS</h5>
+						<ul>
+							<li><pre>http://stream1.visualon.com:8082/hls/Customers/Arrisi/36687/dynamic_res/index.m3u8</pre>
+							</li>
+						</ul>
+					</div>
 
-                </li>
-            </ul>
-        </nav>
-        <div class="main">
-            <section id="hls" class="protocol">
-                <h3>HLS</h3>
-                <div id="hls-drm-section">
-                    <h4>DRM</h4>
-                    <div id="hls-vmx">
-                        <h5>Verimatrix</h5>
-                        <p class="vcas"><span class="prefix">VCAS:</span>public-ott-nodrm.verimatrix.com:80</p>
-                        <pre></pre>
-                        <ul>
-                            <li><pre>http://d3esberis2t9z4.cloudfront.net/vod/air-race-01-encrypt/index-nodrm.m3u8</pre>
-                            </li>
-                            <li><pre>https://s3.amazonaws.com/ott-content/vod/elemental/cars/cars-nodrm.m3u8</pre>
-                            </li>
-                            <li><pre>http://d3esberis2t9z4.cloudfront.net/vod/making-culture-01-encrypt/index-nodrm.m3u8</pre>
-                            </li>
-                            <h6>VideoMark</h6>
-                            <li><pre>http://ott-content.s3.amazonaws.com/vod/CCD153A3-9F60-4D5B-A6F9-15FEF46C0A0E/index.m3u8</pre>
-                            </li>
-                            <li><pre>http://s3.amazonaws.com/ott-content/vod/A65E7915-1395-4539-B105-C9F14E895AF4/index.m3u8</pre>
-                            </li>
-                        </ul>
-                        <p class="vcas"><span class="prefix">VCAS:</span>hlscsm.webtv.telia.com:8014</p>
-                        <pre></pre>
-                        <ul>
-                            <li><pre>curl -s -I http://rr.webtv.telia.com:8090/114_hls_national_geographics_wild</pre>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="hls-aes-128">
-                        <h5>Open AES-128</h5>
-                        <ul>
-                            <li><pre>http://stream1.visualon.com:8082/hls/closedcaption/0909_cc9_m/1C_index.m3u8</pre>
-                            </li>
-                            <li><pre>http://stream1.visualon.com:8082/hls/closedcaption/0926_01/1C_index.m3u8</pre>
-                            </li>
-                            <li><pre>http://stream1.visualon.com:8082/hls/closedcaption/0926_02/1C_index.m3u8</pre>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="hls-fairplay">
-                        <h5>Sample-AES(FairPlay)</h5>
-                        <ul>
-                            <li><pre>http://10.2.68.19:6001/HLS/SampleAesContent/index.m3u8</pre>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="hls-subtitles-section">
-                    <h4>Subtitles</h4>
-                    <div id="hls-in-manifest" class="in-manifest">
-                        <h5>In-Manifest</h5>
-                        <div id="hls-manifest-webvtt">
-                            <h6>WebVTT</h6>
-                            <ul>
-                                <li><pre>http://stream1.visualon.com:8082/hls/closedcaption/webvtt/22627/all.m3u8</pre>
-                                </li>
-                                <li><pre>http://stream1.visualon.com:8082/hls/Customers/Discretix/23244/MyMovie_HLS_25FPS_Clr/MyMovie.m3u8</pre>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="hls-manifest-smpte">
-                            <h6>SMPTE:</h6>
-                            <ul>
-                                <li><pre>http://stream1.visualon.com:8082/hls/closedcaption/SMPTE/Harmonic/index.m3u8</pre>
-                                </li>
-                                <li><pre>http://stream1.visualon.com:8082/hls/closedcaption/SMPTE/Channel(subhls_test)/index.m3u8</pre>
-                                </li>
-                                <li><pre>http://testharmonic.com/Content/SS/Live/Channel(subss_test).isml/Manifest</pre>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="hls-embedded" class="embedded">
-                        <h5>Embedded</h5>
-                        <div id="hls-embeded-cc">
-                            <h6>CEA-608/708</h6>
-                            <ul>
-                                <li><pre>http://stream1.visualon.com:8082/hls/closedcaption/cc_special/177C_640x480_612K_29f.m3u8</pre>
-                                </li>
-                                <li><pre>http://stream1.visualon.com:8082/hls/closedcaption/closedcaption/43C_480x320_824K.m3u8</pre>
-                                </li>
-                                <li><pre>http://stream1.visualon.com:8082/hls/closedcaption/closedcaption/10C_480x360_824K.m3u8</pre>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="hls-embeded-dvb">
-                            <h6>DVB_Multi(check time align)</h6>
-                            <ul>
-                                <li><pre>http://stream1.visualon.com:8082/hls/closedcaption/DVB/DVB_1.m3u8</pre>
-                                </li>
-                                <li><pre>http://stream1.visualon.com:8082/hls/closedcaption/DVB/bird.m3u8</pre>
-                                </li>
-                                <li><pre>http://stream1.visualon.com:8082/hls/Customers/Ericsson/vod6/index.m3u8</pre>
-                                </li>
-                            </ul>
-                            <h6>TeliaSonera DVB ID3</h6>
-                            <ul>
-                                <li><pre>http://stream1.visualon.com:8082/hls/cUstomers/TeliaSonera/37337/index.m3u8</pre>
-                                </li>
-                                <li><pre> (DVB(dan_fin)_webvtt(swe))</pre> <pre>http://stream1.visualon.com:8082/hls/Customers/TeliaSonera/44772/dvb_vtt/index.m3u8</pre>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
-                    <div id="tags-section">
-                        <h4>Tags Support</h4>
-                        <div id="iframe">
-                            <h5>I-Frames</h5>
-                            <ul>
-                                <li><pre>http://stream1.visualon.com:8082/hls/Frank/668191947/668191947.m3u8</pre>
-                                </li>
-                                <li><pre>http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
+					<div id="hls_4k">
+						<h5>4K</h5>
+						<ul>
+							<li><pre>https://dqwp3xzzbfhtw.cloudfront.net/vod/sintel-4k.smil/playlist.m3u8</pre>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="https-section">
+					<h4>HTTPS</h4>
+					<ul>
+						<li><pre>https://stream1.visualon.com/hls/bipbopall.m3u8 (need CA )</pre>
+						</li>
+						<li><pre>https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8</pre>
+						</li>
+						<li><pre>Live</pre> <pre>https://rr.ew.waoo.tv/__cl/cg:default/__c/49-83_HTTP/__op/clear/__f/index.m3u8</pre>
+						</li>
+					</ul>
+				</div>
+				<div id="live-section">
+					<h4>Live</h4>
+					<ul>
+						<li><pre>http://nscreenn-chtmod.cdn.hinet.net/live/Home/index.m3u8</pre>
+						</li>
+						<li><pre>https://storage.googleapis.com/shaka-live-assets/player-source.m3u8</pre>
+						</li>
+					</ul>
+				</div>
+				<div id="hevc-section">
+					<h4>HEVC</h4>
+					<ul>
+						<li><pre>http://stream1.visualon.com:8082/hls/Customers/Layer3TV/kcnc_hevc/index.m3u8</pre>
+						</li>
+						<li><pre>http://stream1.visualon.com:8082/hls/hevc/hevc.m3u8</pre>
+						</li>
+						<li><pre>http://sample.vodobox.com/planete_interdite_hevc/planete_interdite_hevc.m3u8</pre>
+						</li>
+					</ul>
+				</div>
+				<div id="features-section" class="feature">
+					<h4>Features</h4>
+					<div id="gzip">
+						<h5>GZIP</h5>
+						<ul>
+							<li><pre>http://stream2.visualon.com/hls/gzip/all.m3u8</pre></li>
+							<li><pre>http://stream2.visualon.com/dash/ba/ondemand/testcard/1/client_manifest-events.mpd</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="hls-vtt-thumbnail">
+						<h5>VTT Thumbnail</h5>
+						<ul>
+							<li><pre>https://dqwp3xzzbfhtw.cloudfront.net/vod/smil:bbb.smil/playlist.m3u8</pre>
+								<pre>https://www.radiantmediaplayer.com/media/thumbnails/bbb-thumbnails.vtt</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="bufferingtime">
+						<h5>InitialBuffering Time</h5>
+						<ul>
+							<li><pre>http://stream1.visualon.com:8082/hls/Customers/V_Nova/46271/HLS.tennis-1920x1080p25/tennis-1920x1080p25-1.5mbps.m3u8</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="preferred">
+						<h5>Set default language</h5>
+						<ul>
+							<li><pre>subtitle:por;spa</pre> <pre>http://10.2.68.24/Ericsson_streams/content/5/index.m3u8</pre>
+							</li>
+							<li><pre>subtitle:eng;fra audio:en-eng;fr-fra</pre> <pre>http://stream1.visualon.com:8082/hls/Customers/Ericsson/vod6/index.m3u8</pre>
+							</li>
+							<li><pre>subtitle:eng;fin;sve audio:en-eng;fi-fin</pre> <pre>http://10.2.68.24/Ericsson_streams/content/2/index.m3u8</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="cookie">
+						<h5>Set Cookie</h5>
+						<ul>
+							<li><pre>Set-Cookie: cookie name=Test; domain=visualon.com; path=/;expires=2147483647; secure=false;</pre>
+								<pre>http://stream1.visualon.com:8082/hls/v8/bipbop_16x9_variant.m3u8</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="updateurl">
+						<h5>UpdateURL</h5>
+						<h6>Clear Live</h6>
+						<ul>
+							<li><pre>http://10.2.64.51/live/11/index_live.m3u8</pre> <pre>http://10.2.64.52/live/11/index_live.m3u8</pre>
+							</li>
+						</ul>
+						<h6>Clear NTS</h6>
+						<ul>
+							<li><pre>http://10.2.64.51/live/11/index_nts.m3u8</pre> <pre>http://10.2.64.52/live/11/index_nts.m3u8</pre>
+							</li>
+						</ul>
+						<h6>Clear VOD</h6>
+						<ul>
+							<li><pre>http://10.2.64.51/live/11/index.m3u8</pre> <pre>http://10.2.64.52/live/11/index.m3u8</pre>
+							</li>
+						</ul>
+						<h6>verimatrix Live</h6>
+						<ul>
+							<li><pre>public-ott-nodrm.verimatrix.com:80</pre> <pre>http://10.2.64.51/live/making-culture-01-encrypt/index-nodrm_live.m3u8</pre>
+								<pre>http://10.2.64.52/live/making-culture-01-encrypt/index-nodrm_live.m3u8</pre>
+							</li>
+						</ul>
+						<h6>DRM NTS</h6>
+						<ul>
+							<li><pre>http://10.2.64.51/live/making-culture-01-encrypt/index-nodrm_nts.m3u8</pre>
+								<pre>http://10.2.64.52/live/making-culture-01-encrypt/index-nodrm_nts.m3u8</pre>
+							</li>
+						</ul>
+						<h6>DRM VOD</h6>
+						<ul>
+							<li><pre>http://10.2.64.51/live/making-culture-01-encrypt/index-nodrm.m3u8</pre>
+								<pre>http://10.2.64.52/live/making-culture-01-encrypt/index-nodrm.m3u8</pre>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</section>
+
+			<section id="dash" class="protocol">
+				<h3>Dash</h3>
+				<div id="dash-features">
+					<h4>Features</h4>
+					<div id="dash-vtt-thumbnail">
+						<h5>VTT Thumbnail</h5>
+						<ul>
+							<li><pre>https://s3-ap-northeast-1.amazonaws.com/videopass-testing-tmp/theater/01/999001_1b1a6810a4ad3c4415796496537cc7b4/1410000001_dash.mpd</pre>
+								<pre>https://s3-ap-northeast-1.amazonaws.com/videopass-testing-tmp/theater/01/999001_1b1a6810a4ad3c4415796496537cc7b4/1410000001_thumb_thumbnails/thumbnails.vtt</pre>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="dash-live">
+					<h4>Live</h4>
+					<ul>
+						<li><pre>http://cdn.lab.video.friday.tw/live/fet003.smil/manifest.mpd</pre>
+						</li>
+						<li><pre>https://storage.googleapis.com/shaka-live-assets/player-source.mpd</pre>
+						</li>
+						<li><pre>https://wowzaec2demo.streamlock.net/live/bigbuckbunny/manifest_mpm4sav_mvtime.mpd</pre>
+						</li>
+					</ul>
+				</div>
+				<div id="dash-ba">
+					<h4>BA</h4>
+					<ul>
+						<li><pre>http://stream2.visualon.com/dash/ba/ondemand/testcard/1/client_manifest-events.mpd</pre>
+						</li>
+						<li><pre>http://rdmedia.bbc.co.uk/dash/ondemand/testcard/1/client_manifest-events.mpd</pre>
+						</li>
+					</ul>
+				</div>
+
+				<div id="dash-4k">
+					<h4>4K</h4>
+					<ul>
+						<li><pre>http://storage.googleapis.com/shaka-demo-assets/sintel/dash.mpd</pre>
+						</li>
+					</ul>
+				</div>
+				<div id="dash-drm">
+					<h4>DRM</h4>
+					<div id="dash-widevine">
+						<h5>Widevine</h5>
+						<ul>
+							<li><pre>http://drmw.lab.video.friday.tw:80?deviceId=NjBmYzE5MzgtN2FlYS0zODBiLWFjMTctNTFjMjY2YzUxNmM2</pre>
+								<pre>http://stream1.visualon.com:8082/tasklink/61433/vod/sample4.mp4/manifest.mpd</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="dash-vmx">
+						<h5>VMX</h5>
+						<ul>
+							<li><pre>public-ott-nodrm.verimatrix.com</pre> <pre>http://ott.digital-tv.ro/fabrix2/ED_HD_512kb_1432840643.mpd</pre>
+								<pre>http://verimatrix-dash.s3.amazonaws.com/cenc/vmx-pssh0/dash.mpd</pre>
+								<pre>http://verimatrix-dash.s3.amazonaws.com/cenc/vmx-dummypr-pssh0/dash.mpd</pre>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="pd" class="protocol">
+				<h3>PD</h3>
+				<ul>
+					<li><pre>https://stream1.visualon.com/ssl/4M_H264_hp_720x480_High_30f_mp3.mp4</pre>
+					</li>
+					<li><pre>http://stream1.visualon.com:8188/source/pd/aaclc/aaclc_48khz_2ch_103kbps.mp4</pre>
+					</li>
+					<li><pre>http://stream1.visualon.com:8188/source/videoonly/h263/h263_qcif_10fps_35kbits.mp4</pre>
+					</li>
+					<li><pre>http://stream1.visualon.com:8188/source/videoonly/h264/h264_d1_30fps_384kbits.mp4</pre>
+					</li>
+					<li><pre>http://stream1.visualon.com:8188/customers/osmp/PD/H264/MP4/2M_H264_1280x720_MainProfile_24f.mp4</pre>
+					</li>
+				</ul>
+			</section>
+			<section id="ss" class="protocol">
+				<h3>Smooth Streaming</h3>
+				<ul>
+					<li><pre>http://ss-iis.visualon.com:9001/multiaudio/audioonly/audio.ism/manifest</pre>
+					</li>
+					<li><pre>http://ss-iis.visualon.com:9001/hd14/H264_720p_Main/hd14.ism/Manifest</pre>
+					</li>
+					<li><pre>http://ss-iis.visualon.com:9001/hd14/H264_1080p_High/hd14.ism/Manifest</pre>
+					</li>
+					<li><pre>http://ss-iis.visualon.com:9001/hd14/H264_Screen_Encoding_Baseline/hd14.ism/Manifest</pre>
+					</li>
+					<li><pre>http://ss-iis.visualon.com:9001/customer/ttml/Elephants_Dream_H264_720p/ElephantsDream.ism/Manifest<br />
 </pre></li>
-                            </ul>
-                        </div>
-                        <div id="utc">
-                            <h5>UTC Time:</h5>
-                            <ul>
-                                <li><pre>http://stream1.visualon.com:8082/hls/UTC/index.m3u8</pre>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="Apple">
-                            <h5>bipbop</h5>
-                            <ul>
-                                <li><pre>V8</pre> <pre>http://stream1.visualon.com:8082/hls/v8/bipbop_16x9_variant1.m3u8</pre>
-                                </li>
-                                <li><pre>Basic stream</pre> <pre>http://stream2.visualon.com/hls/apple/bipbop_16x9/bipbop_16x9_variant.m3u8</pre>
-                                </li>
-                                <li><pre>Advanced stream (HEVC/H.264) fmp4</pre> <pre>http://stream2.visualon.com/hls/apple/bipbop_adv_example_hevc/master.m3u8</pre>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="assets-section">
-                        <h4>Assets</h4>
-                        <div id="purevideo">
-                            <h5>PURE Video</h5>
-                            <ul>
-                                <li><pre>http://stream1.visualon.com:8082/hls/videoonly/stream/videoonly.m3u8</pre>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="pureaudio">
-                            <h5>PURE Audio</h5>
-                            <ul>
-                                <li><pre>http://stream1.visualon.com:8082/hls/customers/mdialog/new/pre_mid_post_roll_1/audio.m3u8</pre>
-                                </li>
-                                <li><pre>http://stream1.visualon.com:8082/hls/Customers/HBO/aac/index.m3u8 (ID3)</pre>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="multi_audio">
-                            <h5>Multi_Audio</h5>
-                            <ul>
-                                <li><pre>http://stream1.visualon.com:8082/hls/multiaudio/MultiAudioOption10/1/multiaudio.m3u8</pre>
-                                </li>
-                                <li><pre>http://stream1.visualon.com:8082/hls/multiaudio/MultiAudioOption10/MultiAO1/multiaudio.m3u8</pre>
-                                </li>
-                                <li><pre>http://stream1.visualon.com:8082/hls/multiaudio/MultiAudioOption10/MultiAO2/multiav.m3u8
-</pre></li>
-                            </ul>
-                        </div>
-                        <div id="dynamic_res">
-                            <h5>H264 SPS</h5>
-                            <ul>
-                                <li><pre>http://stream1.visualon.com:8082/hls/Customers/Arrisi/36687/dynamic_res/index.m3u8</pre>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                         <div id="hls_4k">
-                            <h5>4K</h5>
-                            <ul>
-                                <li><pre>https://dqwp3xzzbfhtw.cloudfront.net/vod/sintel-4k.smil/playlist.m3u8</pre>
-                                </li>
-                            </ul>
-                        </div>
-                        </div>
-                        <div id="https-section">
-                            <h4>HTTPS</h4>
-                            <ul>
-                                <li><pre>https://stream1.visualon.com/hls/bipbopall.m3u8 (need CA )</pre>
-                                </li>
-                                <li><pre>https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8</pre>
-                                </li>
-                                <li><pre>Live</pre> <pre>https://rr.ew.waoo.tv/__cl/cg:default/__c/49-83_HTTP/__op/clear/__f/index.m3u8</pre>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="live-section">
-                            <h4>Live</h4>
-                            <ul>
-                                <li><pre>http://nscreenn-chtmod.cdn.hinet.net/live/Home/index.m3u8</pre>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="hevc-section">
-                            <h4>HEVC</h4>
-                            <ul>
-                                <li><pre>http://stream1.visualon.com:8082/hls/Customers/Layer3TV/kcnc_hevc/index.m3u8</pre>
-                                </li>
-                                <li><pre>http://stream1.visualon.com:8082/hls/hevc/hevc.m3u8</pre>
-                                </li>
-                                <li><pre>http://sample.vodobox.com/planete_interdite_hevc/planete_interdite_hevc.m3u8</pre>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="features-section" class="feature">
-                            <h4>Features</h4>
-                            <div id="gzip">
-                                <h5>GZIP</h5>
-                                <ul>
-                                    <li><pre>http://stream2.visualon.com/hls/gzip/all.m3u8</pre></li>
-                                    <li><pre>http://stream2.visualon.com/dash/ba/ondemand/testcard/1/client_manifest-events.mpd</pre>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="hls-vtt-thumbnail">
-                                <h5>VTT Thumbnail</h5>
-                                <ul>
-                                    <li><pre>https://dqwp3xzzbfhtw.cloudfront.net/vod/smil:bbb.smil/playlist.m3u8</pre>
-                                        <pre>https://www.radiantmediaplayer.com/media/thumbnails/bbb-thumbnails.vtt</pre>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="bufferingtime">
-                                <h5>InitialBuffering Time</h5>
-                                <ul>
-                                    <li><pre>http://10.2.68.147:8080/V_Nova/46271/HLS.tennis-1920x1080p25/tennis-1920x1080p25-1.5mbps.m3u8</pre>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="preferred">
-                                <h5>Set default language</h5>
-                                <ul>
-                                    <li><pre>subtitle:por;spa</pre> <pre>http://10.2.68.24/Ericsson_streams/content/5/index.m3u8</pre>
-                                    </li>
-                                    <li><pre>subtitle:eng;fra audio:en-eng;fr-fra</pre> <pre>http://stream1.visualon.com:8082/hls/Customers/Ericsson/vod6/index.m3u8</pre>
-                                    </li>
-                                    <li><pre>subtitle:eng;fin;sve audio:en-eng;fi-fin</pre> <pre>http://10.2.68.24/Ericsson_streams/content/2/index.m3u8</pre>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="cookie">
-                                <h5>Set Cookie</h5>
-                                <ul>
-                                    <li><pre>Set-Cookie: cookie name=Test; domain=visualon.com; path=/;expires=2147483647; secure=false;</pre>
-                                        <pre>http://stream1.visualon.com:8082/hls/v8/bipbop_16x9_variant.m3u8</pre>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="updateurl">
-                                <h5>UpdateURL</h5>
-                                <h6>Clear Live</h6>
-                                <ul>
-                                    <li><pre>http://10.2.64.51/live/11/index_live.m3u8</pre> <pre>http://10.2.64.52/live/11/index_live.m3u8</pre>
-                                    </li>
-                                </ul>
-                                <h6>Clear NTS</h6>
-                                <ul>
-                                    <li><pre>http://10.2.64.51/live/11/index_nts.m3u8</pre> <pre>http://10.2.64.52/live/11/index_nts.m3u8</pre>
-                                    </li>
-                                </ul>
-                                <h6>Clear VOD</h6>
-                                <ul>
-                                    <li><pre>http://10.2.64.51/live/11/index.m3u8</pre> <pre>http://10.2.64.52/live/11/index.m3u8</pre>
-                                    </li>
-                                </ul>
-                                <h6>verimatrix Live</h6>
-                                <ul>
-                                    <li><pre>public-ott-nodrm.verimatrix.com:80</pre> <pre>http://10.2.64.51/live/making-culture-01-encrypt/index-nodrm_live.m3u8</pre>
-                                        <pre>http://10.2.64.52/live/making-culture-01-encrypt/index-nodrm_live.m3u8</pre>
-                                    </li>
-                                </ul>
-                                <h6>DRM NTS</h6>
-                                <ul>
-                                    <li><pre>http://10.2.64.51/live/making-culture-01-encrypt/index-nodrm_nts.m3u8</pre>
-                                        <pre>http://10.2.64.52/live/making-culture-01-encrypt/index-nodrm_nts.m3u8</pre>
-                                    </li>
-                                </ul>
-                                <h6>DRM VOD</h6>
-                                <ul>
-                                    <li><pre>http://10.2.64.51/live/making-culture-01-encrypt/index-nodrm.m3u8</pre>
-                                        <pre>http://10.2.64.52/live/making-culture-01-encrypt/index-nodrm.m3u8</pre>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    
-            </section>
-            
-            <section id="dash" class="protocol">
-                <h3>Dash</h3>
-                <div id="dash-features">
-                    <h4>Features</h4>
-                    <div id="dash-vtt-thumbnail">
-                    <h5>VTT Thumbnail</h5>
-                    <ul>
-                        <li><pre>https://s3-ap-northeast-1.amazonaws.com/videopass-testing-tmp/theater/01/999001_1b1a6810a4ad3c4415796496537cc7b4/1410000001_dash.mpd</pre>
-                            <pre>https://s3-ap-northeast-1.amazonaws.com/videopass-testing-tmp/theater/01/999001_1b1a6810a4ad3c4415796496537cc7b4/1410000001_thumb_thumbnails/thumbnails.vtt</pre>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-                <div id="dash-live">
-                <h4>Live</h4>
-                <ul>
-                    <li><pre>http://cdn.lab.video.friday.tw/live/fet003.smil/manifest.mpd</pre>
-                    </li>
-                </ul>
-                </div>
-                 <div id="dash-ba">               
-                <h4>BA</h4>
-                <ul>
-                    <li><pre>http://stream2.visualon.com/dash/ba/ondemand/testcard/1/client_manifest-events.mpd</pre>
-                    </li>
-                    <li><pre>http://rdmedia.bbc.co.uk/dash/ondemand/testcard/1/client_manifest-events.mpd</pre>
-                    </li>
-                </ul>
-                </div>
-                
-                 <div id="dash-4k">
-                <h4>4K</h4>
-                <ul>
-                    <li><pre>http//storage.googleapis.com/shaka-demo-assets/sintel/dash.mpd</pre>
-                    </li>
-                </ul>
-                </div>
-                <div id="dash-drm">
-                <h4>DRM</h4>
-                <div id="dash-widevine">
-                <h5>Widevine</h5>
-                <ul>
-                    <li><pre>http://drmw.lab.video.friday.tw:80?deviceId=NjBmYzE5MzgtN2FlYS0zODBiLWFjMTctNTFjMjY2YzUxNmM2</pre>
-                        <pre>http://stream1.visualon.com:8082/tasklink/61433/vod/sample4.mp4/manifest.mpd</pre>
-                    </li>
-                </ul>
-                </div>
-                <div id="dash-vmx">
-                <h5>VMX</h5>
-                <ul>
-                    <li><pre>public-ott-nodrm.verimatrix.com</pre> <pre>http://ott.digital-tv.ro/fabrix2/ED_HD_512kb_1432840643.mpd</pre>
-                        <pre>http://verimatrix-dash.s3.amazonaws.com/cenc/vmx-pssh0/dash.mpd</pre>
-                        <pre>http://verimatrix-dash.s3.amazonaws.com/cenc/vmx-dummypr-pssh0/dash.mpd</pre>
-                    </li>
-                </ul>
-                </div>
-                </div>
-            </section>
-            <section id="pd" class="protocol">
-                <h3>PD</h3>
-                <ul>
-                    <li><pre>https://stream1.visualon.com/ssl/4M_H264_hp_720x480_High_30f_mp3.mp4</pre>
-                    </li>
-                    <li><pre>http://stream1.visualon.com:8188/source/pd/aaclc/aaclc_48khz_2ch_103kbps.mp4</pre>
-                    </li>
-                    <li><pre>http://stream1.visualon.com:8188/source/videoonly/h263/h263_qcif_10fps_35kbits.mp4</pre>
-                    </li>
-                    <li><pre>http://stream1.visualon.com:8188/source/videoonly/h264/h264_d1_30fps_384kbits.mp4</pre>
-                    </li>
-                    <li><pre>http://stream1.visualon.com:8188/customers/osmp/PD/H264/MP4/2M_H264_1280x720_MainProfile_24f.mp4</pre>
-                    </li>
-                </ul>
-            </section>
-            <section id="ss" class="protocol">
-                <h3>Smooth Streaming</h3>
-                <ul>
-                    <li><pre>http://ss-iis.visualon.com:9001/multiaudio/audioonly/audio.ism/manifest</pre>
-                    </li>
-                    <li><pre>http://ss-iis.visualon.com:9001/hd14/H264_720p_Main/hd14.ism/Manifest</pre>
-                    </li>
-                    <li><pre>http://ss-iis.visualon.com:9001/hd14/H264_1080p_High/hd14.ism/Manifest</pre>
-                    </li>
-                    <li><pre>http://ss-iis.visualon.com:9001/hd14/H264_Screen_Encoding_Baseline/hd14.ism/Manifest</pre>
-                    </li>
-                    <li><pre>http://ss-iis.visualon.com:9001/customer/ttml/Elephants_Dream_H264_720p/ElephantsDream.ism/Manifest<br />
-</pre></li>
-                </ul>
-            </section>
-            <section id="misc" class="protocol">
-                <h3>Misc.</h3>
-                <div id="external-subtitles" class="external">
-                    <h4>External Subtitle</h4>
-                    <div id="external-ttml">
-                        <h5>TTML</h5>
-                        <ul>
-                            <li><pre>http://stream1.visualon.com:8082/hls/ttml1/Alignright.xml</pre>
-                            </li>
-                            <li><pre>http://stream1.visualon.com:8082/hls/Customers/Amazon_kindle/41205/hbo_622183_PRO17_CC_2.xml</pre>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="external-srt">
-                        <h5>SRT</h5>
-                        <ul>
-                            <li><pre>http://stream1.visualon.com:8082/hls/ttml/cht.srt</pre>
-                            </li>
-                            <li><pre>http://stream1.visualon.com:8082/hls/ttml/chs.srt</pre>
-                            </li>
-                            <li><pre>http://stream1.visualon.com:8082/hls/ttml/eng.srt</pre>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="external-smi">
-                        <h5>SMI</h5>
-                        <ul>
-                            <li><pre>http://stream1.visualon.com:8082/hls/ttml/test1.smi</pre>
-                            </li>
-                            <li><pre>http://stream1.visualon.com:8082/hls/ttml/subtitle_kor.smi</pre>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="external-webvtt">
-                        <h5>WebVTT</h5>
-                        <ul>
-                            <li><pre>http://stream1.visualon.com:8082/hls/closedcaption/webvtt/bold.vtt</pre>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="external-smpte">
-                        <h5>SMPTE</h5>
-                        <ul>
-                            <li><pre>http://stream1.visualon.com:8082/hls/smpte/41205/hbo_622183_PRO17_CC_2.xml</pre>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div id="Ads-Tags" class="Ads-Tags">
-                    <h4>Ads Tags</h4>
-                    <div id="IMA-Sample-Tags">
-                        <h5>IMA Sample Tags</h5>
-                        <ul>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&amp;correlator=">Single Inline Linear</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dskippablelinear&amp;correlator=">Single Skippable Inline</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dredirectlinear&amp;correlator=">Single Redirect Linear</a>
-                                </li>
-                                <br>
-                                 <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dredirecterror&amp;nofb=1&amp;correlator=">Single Redirect Error</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dredirecterror&amp;correlator=">Single Redirect Broken (Fallback)</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dlinearvpaid2js&amp;correlator=">Single VPAID 2.0 Linear</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=480x70&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dnonlinear&amp;correlator=">Single Non-linear Inline</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpreonly&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP Pre-roll</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpreonlybumper&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP Pre-roll + Bumper</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpostonly&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP Post-roll</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpostonlybumper&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP Post-roll + Bumper</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpost&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP Pre-, Mid-, and Post-rolls, Single Ads</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostpod&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP - Pre-roll Single Ad, Mid-roll Standard Pod with 3 ads, Post-roll Single Ad</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostoptimizedpod&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP - Pre-roll Single Ad, Mid-roll Optimized Pod with 3 Ads, Post-roll Single Ad</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostpodbumper&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP - Pre-roll Single Ad, Mid-roll Standard Pod with 3 Ads, Post-roll Single Ad (bumpers around all ad breaks)</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostoptimizedpodbumper&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP - Pre-roll Single Ad, Mid-roll Optimized Pod with 3 Ads, Post-roll Single Ad (bumpers around all ad breaks)</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostlongpod&amp;cmsid=496&amp;vid=short_tencue&amp;correlator=">VMAP - Pre-roll Single Ad, Mid-roll Standard Pods with 5 Ads Every 10 Seconds for 1:40, Post-roll Single Ad</a>
-                                </li>                                        
-                        </ul>
-                    </div>
-                    <div id="radiantmediaplayer-tags">
-                        <h5>RadiantMediaPlayer Tags</h5>
-                        <ul>
-                                <li>
-	                                <ol>                               
-		                                <li><a href="https://www.radiantmediaplayer.com/vast/tags/inline-linear.xml">Single Inline Linear 1</a></li>
-		                                <li><a href="https://www.radiantmediaplayer.com/vast/tags/inline-linear-2.xml">Single Inline Linear 2</a></li>
-		                                <li><a href="https://www.radiantmediaplayer.com/vast/tags/inline-linear-5.xml">Single Inline Linear 3</a></li>
-	                                </ol>
-                                </li>
-                                <br>
-                                <li><a href="https://www.radiantmediaplayer.com/vast/tags/inline-linear-skippable.xml">Single Skippable Inline</a>
-                                </li>
-                                <br>
-                                <li><a href="https://www.radiantmediaplayer.com/vast/tags/audio.xml">Single Audio Inline Linear</a>
-                                </li>
-                                <br>
-								<li><a href="https://www.radiantmediaplayer.com/vast/tags/redirect.xml">VAST redirect (VAST wrapper)</a>
-                                </li>
-                                <br>
-								<li><a href="https://www.radiantmediaplayer.com/vast/tags/non-linear.xml">Single Non-linear Inline</a>
-                                </li>
-                                <br>
-                                <li><a href="https://www.radiantmediaplayer.com/vast/tags/vpaid-1-js-linear.xml">VPAID 2 JS</a>
-                                </li>
-                                <br>
-                                <li><a href="https://www.radiantmediaplayer.com/vast/tags/vmap.xml">VMAP Pre-, Mid-, and Post-rolls, Single Ads</a>
-                                </li>
-                                <br>
-                                <li><a href="https://www.radiantmediaplayer.com/vast/tags/vmap-prerolls.xml">VMAP 3 Pre-rolls</a>
-                                </li>
-                                <br>                                
-                        </ul>
-                    </div>
-                    <div id="jwplayer-tags">
-                        <h5>JW Player Tags</h5>
-                        <ul>
-                                <li><a href="https://s3.amazonaws.com/demo.jwplayer.com/player-demos/assets/overlay.xml ">Non-linear Overlay</a>
-                                </li>
-                                <br>
-                                <li><a href="https://support-static.jwplayer.com/content/advertising/vpaid-2-test.xml">VPAID 2.0 Interactive Ads</a>
-                                </li>
-                                <br>
-								<li><a href="https://s3.amazonaws.com/demo.jwplayer.com/static-tag/preroll.xml">Static VAST XML Tag</a>
-                                </li>
-                                <br>
-								<li><a href="https://s3.amazonaws.com/demo.jwplayer.com/advertising/assets/vast3_jw_ads.xml">VAST3 Ad Pods</a>
-                                </li>                             
-                        </ul>
-                    </div>
-                    <div id="other-tags">
-                        <h5>Other Tags</h5>
-                        <ul>
-                                <li><a href="https://cdn.theoplayer.com/demos/ads/vast/vast-nonlinear.xml">Overlays and Banners</a>
-                                </li>
-                                <br>
-                                <li><a href="https://cdn.theoplayer.com/demos/ads/vast/livereal-no-skip-with-companion.xml">Companion Ad</a>
-                                </li>
-                                <br>
-								<li><a href="https://rtr.innovid.com/r1.5554946ab01d97.36996823;cb=%2525%25CACHEBUSTER%2525%2525">VPAID Ad</a>
-                                </li>
-                                <br>
-								<li><a href="https://demo.tremorvideo.com/proddev/vast/vast_inline_nonlinear.xml">Inline Nonlinear</a>
-                                </li>
-                                <br>
-                                <li><a href="https://pubads.g.doubleclick.net/gampad/ads?sz=400x300&iu=%2F6062%2Fiab_vast_samples&ciu_szs=300x250%2C728x90&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&correlator=[timestamp]&cust_params=iab_vast_samples%3Dlinear">iab_vast_samples_creatives</a>
-                                </li>
-                                <br>
-                                <li><a href="https://projects.kaltura.com/mdale/hotelVastAd.xml?myRefurl=http%3A//myref.com/%3Ffoo%3Dbar%26cat%3Ddog{utility.nativeAdId">from kaltura (cors)</a>
-                                </li>                                                            
-                        </ul>
-                    </div>
-                </div>                
-            </section>
-            </div>
-            <aside>
-                <ul class="internal_link">
-                    <li><a target="_blank" href="http://10.2.68.24/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/2VhMjhlNWU4NjJlYzhkMGZhMGZhNDYxMDM4NjgwM2ExMzExNTU5MTRjNjIzNjZhOTYwZWU1Y2MwYTM5MGJlNjg1YTk3ZjViMDQ0NmEyNTc1ZWRiNzZiNTAxMTg2YTI0NjgwMzZkZGI4Y2FiMjc0MGJjZmZiZTY5NDMx/1234567890/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/0987654321/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/12345678900987654321/abcdefghijk/0987654321/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/0987654321/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/1234567890/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/0987654321/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/hls/index.m3u8">LongURL</a></li>
-                    <li><a target="_blank" href="http://stream1.visualon.com">OSMP+ Links</a></li>
-                    <li><a target="_blank" href="http://stream2.visualon.com/html5_drm_links.html">HTML5 DRM Links</a></li>
-                    <li><a target="_blank" href="http://stream1.visualon.com:8082/qa/tmp/ericsson.html">Ericsson Links</a>
-                    </li>
-                </ul>
-                <ul class=external_link>
-                    <li><a target="_blank" href="http://download.tsi.telecom-paristech.fr/gpac/dataset/dash/uhd/"><img src="imgs/4everproject.png" alt="HEVC DASH(4k)" width="150" height="80"></a></li>
-                    <li><a target="_blank" href="http://rdmedia.bbc.co.uk/"><img src="imgs/bbc_title.png" alt="BBC" width="176" height="32"></a></li>
-                    <li><a target="_blank" href="https://azure.microsoft.com/en-us/blog/live-247-reference-streams-available/"><img src="imgs/azure.png" alt="Microsoft Azure" width="150" height="32"></a></li>
-                    <li><a target="_blank" href="https://www.radiantmediaplayer.com/test-vectors.html"><img src="imgs/radiantmediaplayer-logo-300.png" alt="radiantmediaplayer" width="120" height="40"></a></li>
-                    <li><a target="_blank" href="https://developer.apple.com/streaming/examples/"><img src="imgs/apple-developer-brandmark.svg" alt="Apple Developer" width="150" height="56"></a></li>
-                    <li><a class="brand" target="_blank" href="http://ampdemo.azureedge.net/ams_samplestreams.html"><img src="imgs/ams.png" alt="Azure Media Player" width="27" height="30"><span>Sample Streams</span></a></li>
-                </ul>
-            </aside>
-        </div>
-        <footer>Copyright &copy; 2003-2017 VisualOn Inc. All rights reserved.</footer>
-        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-        <script type="application/javascript" src="js/singlepagenav.jquery.js"></script>
-        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
-        <script src="js/jquery.menutree.js" type="text/javascript"></script>
-        <script type="text/javascript">
+				</ul>
+			</section>
+			<section id="misc" class="protocol">
+				<h3>Misc.</h3>
+				<div id="external-subtitles" class="external">
+					<h4>External Subtitle</h4>
+					<div id="external-ttml">
+						<h5>TTML</h5>
+						<ul>
+							<li><pre>http://stream1.visualon.com:8082/hls/ttml1/Alignright.xml</pre>
+							</li>
+							<li><pre>http://stream1.visualon.com:8082/hls/Customers/Amazon_kindle/41205/hbo_622183_PRO17_CC_2.xml</pre>
+							</li>
+							<li><pre>http://dash.akamaized.net/dash264/CTA/imsc1/IT1-T-20171026.ttml</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="external-srt">
+						<h5>SRT</h5>
+						<ul>
+							<li><pre>http://stream1.visualon.com:8082/hls/ttml/cht.srt</pre>
+							</li>
+							<li><pre>http://stream1.visualon.com:8082/hls/ttml/chs.srt</pre>
+							</li>
+							<li><pre>http://stream1.visualon.com:8082/hls/ttml/eng.srt</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="external-smi">
+						<h5>SMI</h5>
+						<ul>
+							<li><pre>http://stream1.visualon.com:8082/hls/ttml/test1.smi</pre>
+							</li>
+							<li><pre>http://stream1.visualon.com:8082/hls/ttml/subtitle_kor.smi</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="external-webvtt">
+						<h5>WebVTT</h5>
+						<ul>
+							<li><pre>http://stream1.visualon.com:8082/hls/closedcaption/webvtt/bold.vtt</pre>
+							</li>
+						</ul>
+					</div>
+					<div id="external-smpte">
+						<h5>SMPTE</h5>
+						<ul>
+							<li><pre>http://stream1.visualon.com:8082/hls/smpte/41205/hbo_622183_PRO17_CC_2.xml</pre>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="Ads-Tags" class="Ads-Tags">
+					<h4>Ads Tags</h4>
+					<div id="IMA-Sample-Tags">
+						<h5>IMA Sample Tags</h5>
+						<ul>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&amp;correlator=">Single
+									Inline Linear</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dskippablelinear&amp;correlator=">Single
+									Skippable Inline</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dredirectlinear&amp;correlator=">Single
+									Redirect Linear</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dredirecterror&amp;nofb=1&amp;correlator=">Single
+									Redirect Error</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dredirecterror&amp;correlator=">Single
+									Redirect Broken (Fallback)</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dlinearvpaid2js&amp;correlator=">Single
+									VPAID 2.0 Linear</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=480x70&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dnonlinear&amp;correlator=">Single
+									Non-linear Inline</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpreonly&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP
+									Pre-roll</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpreonlybumper&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP
+									Pre-roll + Bumper</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpostonly&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP
+									Post-roll</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpostonlybumper&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP
+									Post-roll + Bumper</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpost&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP
+									Pre-, Mid-, and Post-rolls, Single Ads</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostpod&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP
+									- Pre-roll Single Ad, Mid-roll Standard Pod with 3 ads,
+									Post-roll Single Ad</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostoptimizedpod&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP
+									- Pre-roll Single Ad, Mid-roll Optimized Pod with 3 Ads,
+									Post-roll Single Ad</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostpodbumper&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP
+									- Pre-roll Single Ad, Mid-roll Standard Pod with 3 Ads,
+									Post-roll Single Ad (bumpers around all ad breaks)</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostoptimizedpodbumper&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=">VMAP
+									- Pre-roll Single Ad, Mid-roll Optimized Pod with 3 Ads,
+									Post-roll Single Ad (bumpers around all ad breaks)</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostlongpod&amp;cmsid=496&amp;vid=short_tencue&amp;correlator=">VMAP
+									- Pre-roll Single Ad, Mid-roll Standard Pods with 5 Ads Every
+									10 Seconds for 1:40, Post-roll Single Ad</a></li>
+						</ul>
+					</div>
+					<div id="radiantmediaplayer-tags">
+						<h5>RadiantMediaPlayer Tags</h5>
+						<ul>
+							<li>
+								<ol>
+									<li><a
+										href="https://www.radiantmediaplayer.com/vast/tags/inline-linear.xml">Single
+											Inline Linear 1</a></li>
+									<li><a
+										href="https://www.radiantmediaplayer.com/vast/tags/inline-linear-2.xml">Single
+											Inline Linear 2</a></li>
+									<li><a
+										href="https://www.radiantmediaplayer.com/vast/tags/inline-linear-5.xml">Single
+											Inline Linear 3</a></li>
+								</ol>
+							</li>
+							<br>
+							<li><a
+								href="https://www.radiantmediaplayer.com/vast/tags/inline-linear-skippable.xml">Single
+									Skippable Inline</a></li>
+							<br>
+							<li><a
+								href="https://www.radiantmediaplayer.com/vast/tags/audio.xml">Single
+									Audio Inline Linear</a></li>
+							<br>
+							<li><a
+								href="https://www.radiantmediaplayer.com/vast/tags/redirect.xml">VAST
+									redirect (VAST wrapper)</a></li>
+							<br>
+							<li><a
+								href="https://www.radiantmediaplayer.com/vast/tags/non-linear.xml">Single
+									Non-linear Inline</a></li>
+							<br>
+							<li><a
+								href="https://www.radiantmediaplayer.com/vast/tags/vpaid-1-js-linear.xml">VPAID
+									2 JS</a></li>
+							<br>
+							<li><a
+								href="https://www.radiantmediaplayer.com/vast/tags/vmap.xml">VMAP
+									Pre-, Mid-, and Post-rolls, Single Ads</a></li>
+							<br>
+							<li><a
+								href="https://www.radiantmediaplayer.com/vast/tags/vmap-prerolls.xml">VMAP
+									3 Pre-rolls</a></li>
+							<br>
+						</ul>
+					</div>
+					<div id="jwplayer-tags">
+						<h5>JW Player Tags</h5>
+						<ul>
+							<li><a
+								href="https://s3.amazonaws.com/demo.jwplayer.com/player-demos/assets/overlay.xml ">Non-linear
+									Overlay</a></li>
+							<br>
+							<li><a
+								href="https://support-static.jwplayer.com/content/advertising/vpaid-2-test.xml">VPAID
+									2.0 Interactive Ads</a></li>
+							<br>
+							<li><a
+								href="https://s3.amazonaws.com/demo.jwplayer.com/static-tag/preroll.xml">Static
+									VAST XML Tag</a></li>
+							<br>
+							<li><a
+								href="https://s3.amazonaws.com/demo.jwplayer.com/advertising/assets/vast3_jw_ads.xml">VAST3
+									Ad Pods</a></li>
+						</ul>
+					</div>
+					<div id="other-tags">
+						<h5>Other Tags</h5>
+						<ul>
+							<li><a
+								href="
+https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/32573358/skippable_ad_unit&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]">Single
+									Skippable Inline</a></li>
+							<br>
+							<li><a
+								href="https://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=is&c=23&pl=VAST&pli=14432293&PluID=0&pos=8834&ord=%5Btimestamp%5D&cim=1">VPAID 2</a></li>
+							<br>							
+							<li><a
+								href="https://cdn.theoplayer.com/demos/ads/vast/vast-nonlinear.xml">Overlays
+									and Banners</a></li>
+							<br>
+							<li><a
+								href="https://cdn.theoplayer.com/demos/ads/vast/livereal-no-skip-with-companion.xml">Companion
+									Ad</a></li>
+							<br>
+							<li><a
+								href="https://rtr.innovid.com/r1.5554946ab01d97.36996823;cb=%2525%25CACHEBUSTER%2525%2525">VPAID
+									Ad</a></li>
+							<br>
+							<li><a
+								href="https://demo.tremorvideo.com/proddev/vast/vast_inline_nonlinear.xml">Inline
+									Nonlinear</a></li>
+							<br>
+							<li><a
+								href="https://pubads.g.doubleclick.net/gampad/ads?sz=400x300&iu=%2F6062%2Fiab_vast_samples&ciu_szs=300x250%2C728x90&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&correlator=[timestamp]&cust_params=iab_vast_samples%3Dlinear">iab_vast_samples_creatives</a>
+							</li>
+							<br>
+							<li><a
+								href="https://projects.kaltura.com/mdale/hotelVastAd.xml?myRefurl=http%3A//myref.com/%3Ffoo%3Dbar%26cat%3Ddog{utility.nativeAdId">from
+									kaltura (cors)</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<aside>
+			<ul class="internal_link">
+				<li><a target="_blank"
+					href="http://10.2.68.24/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/2VhMjhlNWU4NjJlYzhkMGZhMGZhNDYxMDM4NjgwM2ExMzExNTU5MTRjNjIzNjZhOTYwZWU1Y2MwYTM5MGJlNjg1YTk3ZjViMDQ0NmEyNTc1ZWRiNzZiNTAxMTg2YTI0NjgwMzZkZGI4Y2FiMjc0MGJjZmZiZTY5NDMx/1234567890/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/0987654321/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/12345678900987654321/abcdefghijk/0987654321/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/0987654321/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/1234567890/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/0987654321/cGF0aFVSST0lMkZ2MSUyRiouKiZleHBpcnk9MTQ0OTE4NTQ4MSZmbj1zaGE1MTImYy1pcD03MC45MC4xNzMuODkmeDpzZXNzaW9uaWQ9MTQ0OTAxMjY4MDk5Ml9nYkpGV3dpemdmWWdKK29CTlhQbkNOTVZVQUE9LDhmYTA0N/hls/index.m3u8">LongURL</a></li>
+				<li><a target="_blank" href="http://stream1.visualon.com">OSMP+
+						Links</a></li>
+				<li><a target="_blank"
+					href="http://stream2.visualon.com/html5_drm_links.html">HTML5
+						DRM Links</a></li>
+				<li><a target="_blank"
+					href="http://stream1.visualon.com:8082/qa/tmp/ericsson.html">Ericsson
+						Links</a></li>
+			</ul>
+			<ul class=external_link>
+				<li><a target="_blank"
+					href="http://download.tsi.telecom-paristech.fr/gpac/dataset/dash/uhd/"><img
+						src="imgs/4everproject.png" alt="HEVC DASH(4k)" width="150"
+						height="80"></a></li>
+				<li><a target="_blank" href="http://rdmedia.bbc.co.uk/"><img
+						src="imgs/bbc_title.png" alt="BBC" width="176" height="32"></a></li>
+				<li><a target="_blank"
+					href="https://azure.microsoft.com/en-us/blog/live-247-reference-streams-available/"><img
+						src="imgs/azure.png" alt="Microsoft Azure" width="150" height="32"></a></li>
+				<li><a target="_blank"
+					href="https://www.radiantmediaplayer.com/test-vectors.html"><img
+						src="imgs/radiantmediaplayer-logo-300.png"
+						alt="radiantmediaplayer" width="120" height="40"></a></li>
+				<li><a target="_blank"
+					href="https://developer.apple.com/streaming/examples/"><img
+						src="imgs/apple-developer-brandmark.svg" alt="Apple Developer"
+						width="150" height="56"></a></li>
+				<li><a class="brand" target="_blank"
+					href="http://ampdemo.azureedge.net/ams_samplestreams.html"><img
+						src="imgs/ams.png" alt="Azure Media Player" width="27" height="30"><span>Sample
+							Streams</span></a></li>
+			</ul>
+		</aside>
+	</div>
+	<footer>Copyright &copy; 2003-2017 VisualOn Inc. All rights
+		reserved.</footer>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="application/javascript" src="js/singlepagenav.jquery.js"></script>
+	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="js/jquery.menutree.js" type="text/javascript"></script>
+	<script type="text/javascript">
         $(function() {
             $('#menu1').menuTree();
 
@@ -720,7 +812,7 @@
             });
         });
         </script>
-        <script type="application/javascript">
+	<script type="application/javascript">
         jQuery(function() {
             jQuery('.nav').singlePageNav();
         });
